@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioPedidos" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="65ec9025-bc1a-4122-b2ef-b614439b6606">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="144"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\cesar\\eclipse-oxygen-workspace\\hello-jasper\\src\\main\\java\\br\\com\\cesarsousa\\jasper\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="cliente" class="br.com.cesarsousa.model.Cliente">
+		<fieldDescription><![CDATA[cliente]]></fieldDescription>
+	</field>
+	<field name="data" class="java.util.Calendar">
+		<fieldDescription><![CDATA[data]]></fieldDescription>
+	</field>
+	<field name="listaItensPedido" class="java.util.List">
+		<fieldDescription><![CDATA[listaItensPedido]]></fieldDescription>
+	</field>
+	<field name="situacao" class="java.lang.String">
+		<fieldDescription><![CDATA[situacao]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<textField>
+				<reportElement x="247" y="0" width="100" height="20" uuid="7a875094-3d38-449f-bc3b-b08ae97df189"/>
+				<textFieldExpression><![CDATA[$R{rep.titulo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="20" uuid="de254650-7381-4f1f-90bc-980d0bfcde01"/>
+				<text><![CDATA[cliente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="0" width="185" height="20" uuid="11707033-5a0b-417e-87ea-fc0d85169b7d"/>
+				<text><![CDATA[data]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="0" width="185" height="20" uuid="c94e27f2-4bad-4dd5-908a-8df38d430d03"/>
+				<text><![CDATA[situacao]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="20" uuid="99d78e92-dfb8-4397-be4c-416fa7002902"/>
+				<textFieldExpression><![CDATA[""+$F{cliente}.getNome()]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement x="185" y="0" width="185" height="20" uuid="4de583f8-817f-4929-8552-b59fa7a73a81"/>
+				<textFieldExpression><![CDATA[""+$F{data}.getTime()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="185" height="20" uuid="3be75647-ee14-474d-a304-23b2c1734d1c"/>
+				<textFieldExpression><![CDATA[$F{situacao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="20" width="135" height="20" uuid="cf6e0762-9509-4a41-ad39-19a8833b1728"/>
+				<textFieldExpression><![CDATA[$F{cliente}.getDocumento()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="40" width="100" height="20" uuid="ebd6b198-b5cb-43b6-a12f-e4c0e41ca318"/>
+				<textFieldExpression><![CDATA[$R{rep.pedido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="60" width="100" height="20" uuid="ee67f3c9-012a-4f83-9bd6-a72cb74596f3"/>
+				<textFieldExpression><![CDATA[$R{rep.data}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="80" width="100" height="20" uuid="2d598f03-87b4-4f7e-a55a-6558939b1e33"/>
+				<textFieldExpression><![CDATA[$R{rep.cliente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="100" width="100" height="20" uuid="efa87a13-6210-46f4-8de7-e446535a99fa"/>
+				<textFieldExpression><![CDATA[$R{rep. documento}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="275" y="25" width="200" height="100" uuid="02c4136e-0f42-4bc3-9c2b-0952dc2b0e59"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listaItensPedido})]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "RelatorioPedidos_ItensPedido.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="432" y="34" width="80" height="20" uuid="c3d6c267-292e-4704-b872-0a0879177b91"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="512" y="34" width="40" height="20" uuid="5f71f76c-f6f7-44f2-972e-13fd4a678aec"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

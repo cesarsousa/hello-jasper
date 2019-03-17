@@ -1,20 +1,18 @@
 package br.com.cesarsousa.model;
 
-public class Cliente {
+import java.io.Serializable;
 
-	private int id;
-	private String nome;
-	private String endereco;
-	private String complemento;
-	private String uf;
-	private String telefone;	
+public class Cliente implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
+	private String nome;
+    private String endereco;
+    private String uf;
+    
 	public String getNome() {
 		return nome;
 	}
@@ -27,24 +25,16 @@ public class Cliente {
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
-	public String getComplemento() {
-		return complemento;
-	}
-	public void setComplemento(String complemento) {
-		this.complemento = complemento;
-	}
 	public String getUf() {
 		return uf;
 	}
 	public void setUf(String uf) {
 		this.uf = uf;
 	}
-	public String getTelefone() {
-		return telefone;
-	}
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
-	}
+	
+	
+
+	
 	
 	
 }
