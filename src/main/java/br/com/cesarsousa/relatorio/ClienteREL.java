@@ -47,7 +47,7 @@ public class ClienteREL {
 		
 		//ByteArrayInputStream fil = new ByteArrayInputStream(data);
 		
-		InputStream stream = new ByteArrayInputStream(data);
+		//InputStream stream = new ByteArrayInputStream(data);
 		
 		parameters.put("imagem", imagemDecoded);		
 		
