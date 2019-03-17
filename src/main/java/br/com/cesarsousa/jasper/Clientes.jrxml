@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Clientes" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="96dff2b4-8a3b-454f-9753-054786e41a75">
-	<property name="ireport.zoom" value="1.771561000000001"/>
-	<property name="ireport.x" value="165"/>
-	<property name="ireport.y" value="129"/>
+	<property name="ireport.zoom" value="1.6105100000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="imagem" class="java.lang.String"/>
 	<field name="nome" class="java.lang.String"/>
 	<field name="endereco" class="java.lang.String"/>
-	<field name="complemento" class="java.lang.String"/>
 	<field name="uf" class="java.lang.String"/>
-	<field name="telefone" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -21,45 +20,42 @@
 		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch"/>
+		<band height="35" splitType="Stretch">
+			<image scaleImage="FillFrame" onErrorType="Blank">
+				<reportElement x="0" y="0" width="79" height="27" backcolor="#333333" uuid="c29bd2f6-cb7d-4276-b329-8eeef4e42b66"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{imagem}.getBytes()))]]></imageExpression>
+			</image>
+		</band>
 	</pageHeader>
 	<columnHeader>
 		<band height="20" splitType="Stretch">
 			<staticText>
-				<reportElement x="100" y="0" width="114" height="20" uuid="dbebebef-c899-4d99-9857-6a7f51c4b844"/>
+				<reportElement x="0" y="0" width="100" height="20" uuid="992237ef-1409-4ed8-88b3-acedcd073f65"/>
+				<text><![CDATA[nome]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20" uuid="2fdfc1ee-4a35-4f89-8ec2-b9a8be765d7a"/>
 				<text><![CDATA[endereco]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="314" y="0" width="100" height="20" uuid="66db1672-e397-4095-a98d-10c6b1393899"/>
-				<text><![CDATA[telefone]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="0" y="0" width="100" height="20" uuid="992237ef-1409-4ed8-88b3-acedcd073f65"/>
-				<text><![CDATA[nome]]></text>
+				<reportElement x="200" y="0" width="100" height="20" uuid="c48a4ce7-4595-40b1-b2b6-f1790a8dc475"/>
+				<text><![CDATA[uf]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="59" splitType="Stretch">
+		<band height="27" splitType="Stretch">
 			<textField>
 				<reportElement x="0" y="0" width="100" height="20" uuid="2071af58-b723-4598-9191-e6748b7e9ff3"/>
 				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="100" y="0" width="114" height="20" uuid="a4dc2d98-91ff-4388-8e61-43b96e4b22f2"/>
-				<textFieldExpression><![CDATA[$F{endereco.getRua()}]]></textFieldExpression>
+				<reportElement x="100" y="0" width="100" height="20" uuid="afc94192-e14a-46b0-b7c7-e217d2e3d4a3"/>
+				<textFieldExpression><![CDATA[$F{endereco}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="100" y="20" width="188" height="20" uuid="b01245d9-db9c-4179-ad0a-49cebb9a81ca"/>
-				<textFieldExpression><![CDATA[$F{endereco.getComplemento()}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="100" y="39" width="100" height="20" uuid="803b1344-e260-4324-8a95-e7d694af590b"/>
-				<textFieldExpression><![CDATA[$F{endereco.getUf()}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="314" y="0" width="100" height="20" uuid="02ffa46e-0359-4fd8-8df1-c8972049140c"/>
-				<textFieldExpression><![CDATA[$F{telefone}]]></textFieldExpression>
+				<reportElement x="200" y="0" width="100" height="20" uuid="4bf98cfb-4b89-4cba-92df-8a65382e6ce6"/>
+				<textFieldExpression><![CDATA[$F{uf}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
