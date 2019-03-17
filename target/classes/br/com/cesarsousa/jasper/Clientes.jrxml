@@ -7,6 +7,7 @@
 	<field name="nome" class="java.lang.String"/>
 	<field name="endereco" class="java.lang.String"/>
 	<field name="uf" class="java.lang.String"/>
+	<field name="imagemB64" class="java.lang.String"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -30,33 +31,41 @@
 	<columnHeader>
 		<band height="20" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="100" height="20" uuid="992237ef-1409-4ed8-88b3-acedcd073f65"/>
+				<reportElement x="100" y="0" width="100" height="20" uuid="992237ef-1409-4ed8-88b3-acedcd073f65"/>
 				<text><![CDATA[nome]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="100" y="0" width="100" height="20" uuid="2fdfc1ee-4a35-4f89-8ec2-b9a8be765d7a"/>
+				<reportElement x="200" y="0" width="100" height="20" uuid="2fdfc1ee-4a35-4f89-8ec2-b9a8be765d7a"/>
 				<text><![CDATA[endereco]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="200" y="0" width="100" height="20" uuid="c48a4ce7-4595-40b1-b2b6-f1790a8dc475"/>
+				<reportElement x="300" y="0" width="100" height="20" uuid="c48a4ce7-4595-40b1-b2b6-f1790a8dc475"/>
 				<text><![CDATA[uf]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="b7684e76-d8ad-485e-88f8-71dc80e14b49"/>
+				<text><![CDATA[imagemB64]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
 		<band height="27" splitType="Stretch">
 			<textField>
-				<reportElement x="0" y="0" width="100" height="20" uuid="2071af58-b723-4598-9191-e6748b7e9ff3"/>
+				<reportElement x="100" y="0" width="100" height="20" uuid="2071af58-b723-4598-9191-e6748b7e9ff3"/>
 				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="100" y="0" width="100" height="20" uuid="afc94192-e14a-46b0-b7c7-e217d2e3d4a3"/>
+				<reportElement x="200" y="0" width="100" height="20" uuid="afc94192-e14a-46b0-b7c7-e217d2e3d4a3"/>
 				<textFieldExpression><![CDATA[$F{endereco}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="200" y="0" width="100" height="20" uuid="4bf98cfb-4b89-4cba-92df-8a65382e6ce6"/>
+				<reportElement x="300" y="0" width="100" height="20" uuid="4bf98cfb-4b89-4cba-92df-8a65382e6ce6"/>
 				<textFieldExpression><![CDATA[$F{uf}]]></textFieldExpression>
 			</textField>
+			<image>
+				<reportElement x="0" y="0" width="100" height="20" uuid="82f8b72d-a19b-4e03-b627-523e5fb01957"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($F{imagemB64}.getBytes()))]]></imageExpression>
+			</image>
 		</band>
 	</detail>
 	<columnFooter>

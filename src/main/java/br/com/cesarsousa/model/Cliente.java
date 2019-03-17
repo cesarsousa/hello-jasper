@@ -9,9 +9,18 @@ public class Cliente implements Serializable{
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	private String imagemB64;
 	private String nome;
     private String endereco;
     private String uf;
+    
+    public String getImagemB64() {
+		return imagemB64;
+	}
+    
+    public void setImagemB64(String imagemB64) {
+		this.imagemB64 = imagemB64;
+	}
     
 	public String getNome() {
 		return nome;

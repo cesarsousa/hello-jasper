@@ -43,10 +43,8 @@ public class ClienteREL {
 		
 		Map<String, Object> parameters = new HashMap<String,Object>();
 		
-		byte[] data = DatatypeConverter.parseBase64Binary(imagemDecoded);
-		
+		//byte[] data = DatatypeConverter.parseBase64Binary(imagemDecoded);
 		//ByteArrayInputStream fil = new ByteArrayInputStream(data);
-		
 		//InputStream stream = new ByteArrayInputStream(data);
 		
 		parameters.put("imagem", imagemDecoded);		
