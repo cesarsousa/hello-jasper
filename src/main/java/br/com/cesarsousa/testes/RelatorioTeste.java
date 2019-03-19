@@ -5,6 +5,8 @@ import java.util.List;
 
 import br.com.cesarsousa.model.Cliente;
 import br.com.cesarsousa.relatorio.ClienteREL;
+import br.com.cesarsousa.relatorio.MunicioRelatorio;
+import br.com.cesarsousa.relatorio.UFRelatorio;
 
 
 
@@ -13,6 +15,31 @@ public class RelatorioTeste {
 	public static void main(String[] args)
 	{
 		gerarRelatorioDeClientes();
+		
+		gerarRelatorioDeUF();
+		
+		gerarRelatorioDeMunicipios();
+		
+	}
+
+private static void gerarRelatorioDeMunicipios() {
+	try {
+		MunicioRelatorio relatorio = new MunicioRelatorio();
+		relatorio.relatorio();
+	} catch (Exception e) {
+		e.printStackTrace();
+	}
+		
+	}
+
+	private static void gerarRelatorioDeUF() {
+		try {
+			UFRelatorio relatorio = new UFRelatorio();
+			relatorio.relatorio();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 	private static void gerarRelatorioDeClientes() {
@@ -46,7 +73,6 @@ public class RelatorioTeste {
 		}
 		catch(Exception e){
 			e.printStackTrace();
-			System.out.println(e.getMessage());
 		}
 	}
 }
