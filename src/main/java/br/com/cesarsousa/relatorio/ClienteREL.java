@@ -1,13 +1,8 @@
 package br.com.cesarsousa.relatorio;
 
-import java.io.ByteArrayInputStream;
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;import javax.xml.bind.DatatypeConverter;
-
-import org.apache.commons.codec.binary.Base64;
+import java.util.Map;
 
 import br.com.cesarsousa.model.Cliente;
 import net.sf.jasperreports.engine.JasperCompileManager;
@@ -41,20 +36,14 @@ public class ClienteREL {
 	{
 		JasperReport report = JasperCompileManager.compileReport(this.getPathToReportPackage() + "Clientes.jrxml");
 		
-		Map<String, Object> parameters = new HashMap<String,Object>();
-		
-		//byte[] data = DatatypeConverter.parseBase64Binary(imagemDecoded);
-		//ByteArrayInputStream fil = new ByteArrayInputStream(data);
-		//InputStream stream = new ByteArrayInputStream(data);
-		
+		Map<String, Object> parameters = new HashMap<String,Object>();		
 		parameters.put("imagem", imagemDecoded);		
 		
 		JasperPrint print = JasperFillManager.fillReport(report, parameters, new JRBeanCollectionDataSource(clientes));
-
 		JasperExportManager.exportReportToPdfFile(print, "C:\\Users\\cesar\\eclipse-oxygen-workspace\\hello-jasper\\target\\relatorios\\clientes.pdf");	
 		
-		
 	}
+	
 
 	public String getPathToReportPackage() {
 		return this.pathToReportPackage;
