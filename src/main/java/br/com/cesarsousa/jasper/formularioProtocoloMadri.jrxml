@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
-	<property name="ireport.zoom" value="1.3310000000000006"/>
+	<property name="ireport.zoom" value="1.3310000000000013"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="1174"/>
 	<title>
 		<band height="93" splitType="Stretch">
 			<rectangle>
@@ -219,9 +219,9 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<text><![CDATA[- state (country) and, where applicable, territorial unit within that State (canton, province, state, etc.), under the law of which the said legal entity has been organized:]]></text>
 			</staticText>
 		</band>
-		<band height="399">
+		<band height="575">
 			<rectangle>
-				<reportElement positionType="Float" x="0" y="7" width="555" height="137" uuid="0b29f2f0-c3ae-413c-951b-e3d495dfa331"/>
+				<reportElement positionType="Float" x="0" y="7" width="555" height="305" uuid="0b29f2f0-c3ae-413c-951b-e3d495dfa331"/>
 			</rectangle>
 			<staticText>
 				<reportElement x="59" y="26" width="476" height="20" uuid="2787f691-c4bb-4191-a542-75ab1c8e9de6"/>
@@ -236,6 +236,105 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 					<font fontName="Arial" size="9"/>
 				</textElement>
 				<text><![CDATA[(a) Check the appropriate box:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="73" width="453" height="20" uuid="49ff0681-7603-46aa-8de8-c454182e1774"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(i) where the Contracting Party mentioned in item 1 is a State, the applicant is a national of that State;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="95" width="453" height="23" uuid="bd6660a8-3b99-4439-8377-cad207a70670"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(ii) or, where the Contracting Party mentioned in item 1 is an organization, the name of the State of which the applicant is a national:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="120" width="453" height="20" uuid="de6c3908-90af-444c-8372-9f9663088786"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(iii) or, the applicant is domiciled in the territory of the Contracting Party mentioned in item 1;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="143" width="453" height="27" uuid="0faf3b3f-62ea-4a12-9041-599beb752c03"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(iv) or, the applicant has a real and effective industrial or commercial establishment in the territory of the Contracting Party mentioned in item 1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="184" width="476" height="29" uuid="fef36d43-db67-4086-8a54-a559cc92ad8c"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(b) Where the address of the applicant, given in item 2(b), is not in the territory of the Contracting Party mentioned in item 1, indicate in the space provided below:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="216" width="453" height="30" uuid="bb457bc5-fd07-48db-9837-68c4e629ca37"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(i) if the box in paragraph (a)(iii) of the present item has been checked, the domicile of the applicant in the territory of that Contracting Party, or,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="249" width="453" height="30" uuid="0e538fa0-9343-4f18-95a2-8b4c31af4d44"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(ii) if the box in paragraph (a)(iv) of the present item has been checked, the address of the applicant’s industrial or commercial establishment in the territory of that Contracting Party.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="322" width="555" height="242" uuid="1141708f-896c-495a-9e04-040478a24484"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="321" y="406" width="100" height="20" uuid="633c2c36-90dd-46a0-92b6-662967d49ce6"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Fax:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="386" width="100" height="20" uuid="d7122c4a-db86-4c04-8e1f-2e6803229ecc"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="346" width="414" height="20" uuid="e3468e2f-0171-4824-87c6-48d57a97d1cd"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[appointment of a representative]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="426" width="100" height="20" uuid="5b34be5e-9096-44b7-9a7e-a39bbc52a91a"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[E-mail Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="366" width="100" height="20" uuid="f436955e-2742-4282-8d77-80074e829e24"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="406" width="100" height="20" uuid="49e594b1-6894-44a7-a220-64c7f487e895"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Telephone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="450" width="476" height="98" uuid="fc3c74e3-577b-4abb-abe1-a8661242cdaa"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[By providing an e-mail address, any further correspondence from the International Bureau related to this international application and its resulting international registration will be sent only electronically and, therefore, you will no longer receive any paper correspondence.  Likewise, any further correspondence from the International Bureau related to other international applications or international registrations for which the same e-mail address has been, or will be, provided will also be sent only electronically.  Please note that, for the purpose of electronic communication, there can be only one e-mail address recorded per each international registration.]]></text>
 			</staticText>
 		</band>
 	</detail>
