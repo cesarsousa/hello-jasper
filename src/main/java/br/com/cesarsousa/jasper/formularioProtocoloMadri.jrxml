@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
+	<property name="ireport.zoom" value="1.3310000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<title>
+		<band height="93" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="93" uuid="f545e3c7-cc5e-408c-be86-07d893ec4fa1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="11" y="36" width="515" height="36" uuid="825a867f-659c-4999-96e7-90fe53d605c2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APPLICATION FOR INTERNATIONAL REGISTRATION
+GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="1" width="82" height="28" uuid="47f55a23-6d96-4c7e-9a53-3238d002d222"/>
+				<textElement>
+					<font fontName="Arial" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MM2(E)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="643" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="331" height="135" uuid="bb6a9948-fefa-43d2-a221-ca7954b47f0d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="331" y="0" width="224" height="135" uuid="9b2944b8-06ad-4ee7-9d58-6b6a2a2b8c15"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="103" y="11" width="137" height="20" uuid="10d61b2d-2cd4-4743-bbfe-546f9579a064"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="9" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[For use by the applicant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="33" width="272" height="20" uuid="f7ed8f51-954b-4aaf-8483-946a8986d04b"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[This international application includes the following number of:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="53" width="100" height="20" uuid="e889710e-0421-484c-8179-e0d15a8462bc"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[- continuation sheets:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="73" width="100" height="20" uuid="e93ef4c5-17b0-49f7-a0e1-492a1235ddc7"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[- MM17 forms:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="93" width="100" height="20" uuid="db0ed037-23f3-469c-89e5-13393ba3dad5"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Applicant’s reference:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="13" width="137" height="20" uuid="280c9388-4189-4dde-bc0f-3ae1f07e1260"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="9" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[For use by the Office]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="53" width="100" height="20" uuid="b4203fb2-8b17-4906-8531-2038ad1a3a29"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Applicant’s reference:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="135" width="555" height="73" uuid="656749b8-c681-401e-b71d-f34bf21cb5c4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="59" y="148" width="414" height="20" uuid="615d28b0-3561-450a-ade0-5a41d952e909"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONTRACTING PARTY WHOSE OFFICE IS THE OFFICE OF ORIGIN]]></text>
+			</staticText>
+			<line>
+				<reportElement x="59" y="189" width="437" height="1" uuid="9212c5c7-c680-4d07-87ca-32662f37193e"/>
+			</line>
+			<rectangle>
+				<reportElement x="0" y="208" width="555" height="392" uuid="cb9264cf-7e07-42ef-b63d-bf7b4f339a07"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="59" y="224" width="414" height="20" uuid="5f56fef1-a8f2-4440-82b8-5ad243770f99"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APPLICANT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="244" width="100" height="20" uuid="d21ca8df-e660-4b00-9f88-e3c59b971840"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(a) Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="264" width="100" height="20" uuid="1a28d0b4-a291-41ee-8484-b0426d367351"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(b) Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="284" width="142" height="20" uuid="7739b37e-fb08-455d-94d1-40466704afc9"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(c) Address for correspondence:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="304" width="100" height="20" uuid="afc9a312-3426-4e54-b3d0-03b99063223a"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(d) Telephone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="304" width="100" height="20" uuid="b642a14a-d265-4525-8e47-77a222768bc2"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Fax:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="324" width="100" height="20" uuid="07a71fbb-14b7-472d-8387-b382322d4586"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[E-mail Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="344" width="476" height="98" uuid="3d4ac0c9-9391-4678-bba3-1e3e59e884fe"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[By providing an e-mail address, any further correspondence from the International Bureau related to this international application and its resulting international registration will be sent only electronically and, therefore, you will no longer receive any paper correspondence.  Likewise, any further correspondence from the International Bureau related to other international applications or international registrations for which the same e-mail address has been, or will be, provided will also be sent only electronically.  Please note that, for the purpose of electronic communication, there can be only one e-mail address recorded per each international registration.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="442" width="195" height="20" uuid="14bbddb1-9d4e-4740-a46f-44565133a7ad"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(e) Preferred language for correspondence:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="442" width="46" height="20" uuid="e848da24-b7ee-4943-ad3b-3f06d81021d8"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[English]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="358" y="442" width="46" height="20" uuid="3dda056c-d11f-41f9-a847-df676bfbb5d9"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[French]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="442" width="46" height="20" uuid="7988cd50-5167-47fa-b8c5-fee619510f0c"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Spanish]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="462" width="476" height="31" uuid="4cab03d0-5780-454e-9fc4-018ace41c570"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(f) Other indications (as may be required by certain designated Contracting Parties, such as, for example, the United States of America;  only provide indications in either item (i) or in item (ii) but not in both items):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="493" width="276" height="20" uuid="56f2f8e0-7e36-432b-a28a-65c51b6f62c2"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(i) if the applicant is a natural person, nationality of the applicant:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="513" width="339" height="20" uuid="3e22f3fe-86c9-4a91-a7cd-0b916baf53ff"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(ii) if the applicant is a legal entity (please, provide both the following indications):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="103" y="533" width="137" height="20" uuid="6c607f94-02b3-43c0-aae5-4a7b0cdb6794"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[- legal nature of the legal entity:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="103" y="553" width="432" height="33" uuid="61be56a0-d6a4-4114-8473-7a2c5bb5ed64"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[- state (country) and, where applicable, territorial unit within that State (canton, province, state, etc.), under the law of which the said legal entity has been organized:]]></text>
+			</staticText>
+		</band>
+		<band height="399">
+			<rectangle>
+				<reportElement positionType="Float" x="0" y="7" width="555" height="137" uuid="0b29f2f0-c3ae-413c-951b-e3d495dfa331"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="59" y="26" width="476" height="20" uuid="2787f691-c4bb-4191-a542-75ab1c8e9de6"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ENTITLEMENT TO FILE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="50" width="153" height="20" uuid="60ad1583-d0b0-4903-b7cc-9f413c180a6e"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(a) Check the appropriate box:]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="34" width="40" height="20" uuid="60bfe492-7f65-4914-97c4-d547291c3576"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[MM2(E) – ]]></text>
+			</staticText>
+			<textField pattern="MMMMM-yy">
+				<reportElement x="40" y="34" width="77" height="20" uuid="31e9823d-43e7-4857-9fda-2df7e8125fb5"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

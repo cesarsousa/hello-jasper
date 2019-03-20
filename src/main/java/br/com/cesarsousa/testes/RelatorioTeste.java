@@ -5,6 +5,7 @@ import java.util.List;
 
 import br.com.cesarsousa.model.Cliente;
 import br.com.cesarsousa.relatorio.ClienteREL;
+import br.com.cesarsousa.relatorio.FormularioMadriRelatorio;
 import br.com.cesarsousa.relatorio.MunicioRelatorio;
 import br.com.cesarsousa.relatorio.UFRelatorio;
 
@@ -19,6 +20,19 @@ public class RelatorioTeste {
 		gerarRelatorioDeUF();
 		
 		gerarRelatorioDeMunicipios();
+		
+		gerarRelatorioMadri();
+		
+	}
+
+private static void gerarRelatorioMadri() {
+		try {
+			FormularioMadriRelatorio formularioMadriRelatorio = new FormularioMadriRelatorio();
+			formularioMadriRelatorio.relatorio();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 
