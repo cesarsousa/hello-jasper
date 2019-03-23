@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
+	<property name="ireport.zoom" value="1.8150000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="4455"/>
+	<parameter name="folhaRosto" class="java.lang.Object"/>
+	<parameter name="IMAGENS_DIR" class="java.lang.String"/>
+	<title>
+		<band height="93" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="36" width="515" height="36" uuid="825a867f-659c-4999-96e7-90fe53d605c2"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APPLICATION FOR INTERNATIONAL REGISTRATION
+GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="0" width="82" height="28" uuid="47f55a23-6d96-4c7e-9a53-3238d002d222"/>
+				<textElement>
+					<font fontName="Arial" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MM2(E)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="643" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="331" height="135" uuid="bb6a9948-fefa-43d2-a221-ca7954b47f0d"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="331" y="0" width="224" height="135" uuid="9b2944b8-06ad-4ee7-9d58-6b6a2a2b8c15"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="103" y="10" width="137" height="20" uuid="10d61b2d-2cd4-4743-bbfe-546f9579a064"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="9" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[For use by the applicant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="32" width="272" height="20" uuid="f7ed8f51-954b-4aaf-8483-946a8986d04b"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[This international application includes the following number of:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="53" width="100" height="20" uuid="e889710e-0421-484c-8179-e0d15a8462bc"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[- continuation sheets:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="53" width="181" height="20" uuid="121102eb-0f44-4fd6-bfff-c004d316d731"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTaxaContinuacao()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="40" y="73" width="100" height="20" uuid="e93ef4c5-17b0-49f7-a0e1-492a1235ddc7"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[- MM17 forms:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="73" width="100" height="20" uuid="b49a960b-ccce-42c7-bd6d-61f86a99b03e"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getFormularioMm17()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="17" y="94" width="100" height="20" uuid="db0ed037-23f3-469c-89e5-13393ba3dad5"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Applicant’s reference:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="117" y="94" width="100" height="20" uuid="c5bf8981-187a-4a2d-a9c8-dbde49102363"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getEscritorioOrigemContratante()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="380" y="13" width="137" height="20" uuid="280c9388-4189-4dde-bc0f-3ae1f07e1260"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="9" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[For use by the Office]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="53" width="100" height="20" uuid="b4203fb2-8b17-4906-8531-2038ad1a3a29"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Office’s reference:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="444" y="53" width="100" height="20" uuid="1521f63e-a61c-440e-bac5-553749ba074b"/>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getReferenciaEscritorio()]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="135" width="555" height="73" uuid="656749b8-c681-401e-b71d-f34bf21cb5c4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="59" y="148" width="414" height="20" uuid="615d28b0-3561-450a-ade0-5a41d952e909"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONTRACTING PARTY WHOSE OFFICE IS THE OFFICE OF ORIGIN]]></text>
+			</staticText>
+			<line>
+				<reportElement x="59" y="189" width="437" height="1" uuid="9212c5c7-c680-4d07-87ca-32662f37193e"/>
+			</line>
+			<rectangle>
+				<reportElement x="0" y="208" width="555" height="418" forecolor="#000000" backcolor="#FFFFFF" uuid="cb9264cf-7e07-42ef-b63d-bf7b4f339a07">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().isPreferenciaIdiomaIngles()]]></printWhenExpression>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="153" width="33" height="34" forecolor="#000000" backcolor="#000000" uuid="a9f2b9af-05ae-4a62-972d-a7af8e62b5c3"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="24"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="224" width="414" height="20" uuid="5f56fef1-a8f2-4440-82b8-5ad243770f99"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APPLICANT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="244" width="100" height="20" uuid="d21ca8df-e660-4b00-9f88-e3c59b971840"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(a) Name:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="159" y="244" width="300" height="20" uuid="5cd64d49-3d16-4fc7-afc2-e23095eb7618"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().getNome()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="59" y="264" width="100" height="20" uuid="1a28d0b4-a291-41ee-8484-b0426d367351"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(b) Address:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="159" y="264" width="300" height="20" uuid="cffb895f-82e5-462b-bb93-c386ed291257"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().getEndereco()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="59" y="284" width="153" height="20" uuid="7739b37e-fb08-455d-94d1-40466704afc9"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(c) Address for correspondence:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="212" y="284" width="258" height="20" uuid="fef8797c-78df-4962-be1d-2c823df1293e"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().getEnderecoCorrespondecia()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="59" y="304" width="100" height="20" uuid="afc9a312-3426-4e54-b3d0-03b99063223a"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(d) Telephone:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="159" y="304" width="95" height="20" uuid="08edfa9d-7be2-4ae0-aff9-bb21c602a4ed"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().getTelefone()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="321" y="304" width="100" height="20" uuid="b642a14a-d265-4525-8e47-77a222768bc2"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Fax:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="421" y="304" width="100" height="20" uuid="55b3bd5b-9ded-4b2c-891d-e70028cbecae"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().getFax()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="59" y="324" width="100" height="20" uuid="07a71fbb-14b7-472d-8387-b382322d4586"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[E-mail Address]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="159" y="324" width="100" height="20" uuid="844b8ce4-28a7-43ab-9a4a-b03038463e72"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().getEmail()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="59" y="344" width="476" height="84" uuid="3d4ac0c9-9391-4678-bba3-1e3e59e884fe"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[By providing an e-mail address, any further correspondence from the International Bureau related to this international application and its resulting international registration will be sent only electronically and, therefore, you will no longer receive any paper correspondence.  Likewise, any further correspondence from the International Bureau related to other international applications or international registrations for which the same e-mail address has been, or will be, provided will also be sent only electronically.  Please note that, for the purpose of electronic communication, there can be only one e-mail address recorded per each international registration.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="442" width="195" height="20" uuid="14bbddb1-9d4e-4740-a46f-44565133a7ad"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(e) Preferred language for correspondence:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="260" y="443" width="15" height="15" uuid="82f8b72d-a19b-4e03-b627-523e5fb01957">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().isPreferenciaIdiomaIngles()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="281" y="442" width="46" height="20" uuid="e848da24-b7ee-4943-ad3b-3f06d81021d8"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[English]]></text>
+			</staticText>
+			<image>
+				<reportElement x="337" y="443" width="15" height="15" uuid="ac3d2a9d-29b6-4be9-ac14-52ede66c30b4">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().isPreferenciaIdiomaFrances()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="357" y="442" width="46" height="20" uuid="3dda056c-d11f-41f9-a847-df676bfbb5d9"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[French]]></text>
+			</staticText>
+			<image>
+				<reportElement x="417" y="444" width="15" height="15" uuid="da10c0d6-d5d0-4dcf-92ba-bdbcf26e3f23">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().isPreferenciaIdiomaEspanhol()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="437" y="442" width="46" height="20" uuid="7988cd50-5167-47fa-b8c5-fee619510f0c"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Spanish]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="462" width="476" height="31" uuid="4cab03d0-5780-454e-9fc4-018ace41c570"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(f) Other indications (as may be required by certain designated Contracting Parties, such as, for example, the United States of America;  only provide indications in either item (i) or in item (ii) but not in both items):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="493" width="298" height="20" uuid="56f2f8e0-7e36-432b-a28a-65c51b6f62c2"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(i) if the applicant is a natural person, nationality of the applicant:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="390" y="493" width="100" height="20" uuid="0efa47dc-f9ce-4a2c-bfa5-4824b6566779"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().getNacionalidade()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="82" y="513" width="453" height="20" uuid="3e22f3fe-86c9-4a91-a7cd-0b916baf53ff"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(ii) if the applicant is a legal entity (please, provide both the following indications):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="103" y="533" width="137" height="20" uuid="6c607f94-02b3-43c0-aae5-4a7b0cdb6794"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[- legal nature of the legal entity:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="244" y="533" width="100" height="20" uuid="88a2ef56-9660-4d5d-95d4-c2bd65406e1f"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().getNaturezaPessoaJuridica()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="103" y="553" width="432" height="33" uuid="61be56a0-d6a4-4114-8473-7a2c5bb5ed64"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[- state (country) and, where applicable, territorial unit within that State (canton, province, state, etc.), under the law of which the said legal entity has been organized:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="103" y="588" width="432" height="20" uuid="924c22a8-a296-4b0a-a7cf-8d6bcbe20687"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().getNacionalidadePessoaJuridica()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="22" y="227" width="33" height="34" forecolor="#000000" uuid="a172dbb7-d035-4dee-9d75-77e6f58a483e"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+		</band>
+		<band height="342">
+			<rectangle>
+				<reportElement positionType="Float" x="0" y="7" width="555" height="325" uuid="0b29f2f0-c3ae-413c-951b-e3d495dfa331"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="59" y="26" width="476" height="20" uuid="2787f691-c4bb-4191-a542-75ab1c8e9de6"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ENTITLEMENT TO FILE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="50" width="153" height="20" uuid="60ad1583-d0b0-4903-b7cc-9f413c180a6e"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(a) Check the appropriate box:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="62" y="75" width="15" height="15" uuid="4858e3a4-bd78-4b87-ba2c-ecb5c7725a9c">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getDireitoAoArquivo().isContratanteEstado()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="82" y="73" width="453" height="20" uuid="49ff0681-7603-46aa-8de8-c454182e1774"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(i) where the Contracting Party mentioned in item 1 is a State, the applicant is a national of that State;]]></text>
+			</staticText>
+			<image>
+				<reportElement x="62" y="95" width="15" height="15" uuid="d45ae890-f51f-428b-bac6-47986a6c0f66">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getDireitoAoArquivo().isContratanteOrganizacao()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="82" y="95" width="453" height="23" uuid="bd6660a8-3b99-4439-8377-cad207a70670"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(ii) or, where the Contracting Party mentioned in item 1 is an organization, the name of the State of which the applicant is a national:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="82" y="120" width="453" height="20" uuid="e14aa93e-230e-453d-a845-ea8f8963c4b2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getDireitoAoArquivo().getDefinicaoContratanteOrganizacao()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="63" y="150" width="15" height="15" uuid="7cdcaeeb-4303-4a41-b9be-7216f7394307">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getDireitoAoArquivo().isContratanteDomiciliado()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="82" y="148" width="453" height="20" uuid="de6c3908-90af-444c-8372-9f9663088786"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(iii) or, the applicant is domiciled in the territory of the Contracting Party mentioned in item 1;]]></text>
+			</staticText>
+			<image>
+				<reportElement x="62" y="174" width="15" height="15" uuid="8e526249-5179-4381-b150-7fe4e70b84bc">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getDireitoAoArquivo().isContratanteComercial()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="82" y="171" width="453" height="27" uuid="0faf3b3f-62ea-4a12-9041-599beb752c03"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(iv) or, the applicant has a real and effective industrial or commercial establishment in the territory of the Contracting Party mentioned in item 1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="212" width="476" height="29" uuid="fef36d43-db67-4086-8a54-a559cc92ad8c"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(b) Where the address of the applicant, given in item 2(b), is not in the territory of the Contracting Party mentioned in item 1, indicate in the space provided below:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="244" width="453" height="30" uuid="bb457bc5-fd07-48db-9837-68c4e629ca37"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(i) if the box in paragraph (a)(iii) of the present item has been checked, the domicile of the applicant in the territory of that Contracting Party, or,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="277" width="453" height="30" uuid="0e538fa0-9343-4f18-95a2-8b4c31af4d44"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(ii) if the box in paragraph (a)(iv) of the present item has been checked, the address of the applicant’s industrial or commercial establishment in the territory of that Contracting Party.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="31" width="33" height="34" forecolor="#000000" uuid="efa10fee-b90c-4250-9973-64618c4f8c4d"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[3]]></text>
+			</staticText>
+		</band>
+		<band height="262">
+			<rectangle>
+				<reportElement x="0" y="9" width="555" height="242" uuid="1141708f-896c-495a-9e04-040478a24484"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="59" y="23" width="476" height="20" uuid="edb74d3b-1207-497f-8121-921a2518f99d"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APPOINTMENT OF A REPRESENTATIVE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="84" width="31" height="20" uuid="633c2c36-90dd-46a0-92b6-662967d49ce6"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Fax:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="64" width="100" height="20" uuid="d7122c4a-db86-4c04-8e1f-2e6803229ecc"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="104" width="100" height="20" uuid="5b34be5e-9096-44b7-9a7e-a39bbc52a91a"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[E-mail Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="44" width="100" height="20" uuid="f436955e-2742-4282-8d77-80074e829e24"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="84" width="100" height="20" uuid="49e594b1-6894-44a7-a220-64c7f487e895"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Telephone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="128" width="476" height="98" uuid="fc3c74e3-577b-4abb-abe1-a8661242cdaa"/>
+				<textElement textAlignment="Justified"/>
+				<text><![CDATA[By providing an e-mail address, any further correspondence from the International Bureau related to this international application and its resulting international registration will be sent only electronically and, therefore, you will no longer receive any paper correspondence.  Likewise, any further correspondence from the International Bureau related to other international applications or international registrations for which the same e-mail address has been, or will be, provided will also be sent only electronically.  Please note that, for the purpose of electronic communication, there can be only one e-mail address recorded per each international registration.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="160" y="44" width="375" height="20" uuid="58fd06a9-992e-40aa-8937-470fab61b4e2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getRepresentante().getNome()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="64" width="375" height="20" uuid="7855505f-9507-47af-a486-ae1572163523"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getRepresentante().getEndereco()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="84" width="149" height="20" uuid="f3b69b5f-cc19-49a5-bd01-5b0d365077eb"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getRepresentante().getTelefone()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="352" y="84" width="183" height="20" uuid="1bdb4c4c-8fcb-4626-8013-ddfb6534119b"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getRepresentante().getFax()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="104" width="374" height="20" uuid="229d6304-6ad2-446f-82b4-6589cd773a7c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getRepresentante().getEmail()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="28" width="33" height="34" forecolor="#000000" uuid="0664b5b5-8435-4f33-b998-05c51bfa3f57"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[4]]></text>
+			</staticText>
+		</band>
+		<band height="77">
+			<rectangle>
+				<reportElement x="0" y="6" width="555" height="61" uuid="5a7837bb-b1a6-41a6-b771-56f24ae30fd4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="22" y="22" width="33" height="34" forecolor="#000000" uuid="ab912300-e25d-4725-b520-c0ed2ffd641a"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="18" width="476" height="20" uuid="30430ec6-c42c-4560-a4de-e0e0906592dd"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[BASIC APPLICATION OR BASIC REGISTRATION]]></text>
+			</staticText>
+		</band>
+		<band height="256">
+			<rectangle>
+				<reportElement x="0" y="7" width="555" height="236" uuid="0c1fb6a2-42a8-4d47-9cb7-9adeaa8aad33"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="59" y="22" width="476" height="20" uuid="8152d5b5-d203-468f-b91c-cce435aa771c"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRIORITY CLAIMED]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="27" width="33" height="34" forecolor="#000000" uuid="b9c468c5-015f-4379-98c8-f642e1cb9e6e"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[6]]></text>
+			</staticText>
+			<image>
+				<reportElement x="64" y="50" width="15" height="15" uuid="2ab2c0d4-2922-423e-8b5d-21e2d2359277">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getDireitoAoArquivo().isContratanteEstado()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="84" y="51" width="451" height="20" uuid="a2c0a4b1-12f0-411b-a09e-c857b1f103d4"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[The applicant claims the priority of the earlier filing mentioned below:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="75" width="156" height="20" uuid="37cbf7f0-d037-4c32-a5ce-eefd263ae3e6"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Office of earlier filing:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="99" width="156" height="20" uuid="96c6f503-fd41-45db-820e-33d7a9d1e232"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Number of earlier filing (if available):
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="123" width="156" height="20" uuid="894de482-a618-4310-8e12-2bfb9dbfb563"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Date of earlier filing (dd/mm/yyyy): ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="147" width="471" height="28" uuid="27180c07-d620-4707-9847-e6eb6866c3ed"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[If the earlier filing does not relate to all the goods and services listed in item 10 of this form, indicate in the space provided below the goods and services to which it does relate:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="177" width="471" height="20" uuid="2c802eee-9580-43ea-b922-9b1e253b9405"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getDefinicaoPrioridadesReivindicadas()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="75" width="310" height="20" uuid="eaacee33-1dfe-467f-a342-03ec889693a7"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getEscritorioPrioridade()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="99" width="310" height="20" uuid="5712b35f-4a9a-43d4-ab53-9dd4144460ee"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getNumeroPrioridade()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="123" width="310" height="20" uuid="f59a1908-9321-4397-8123-7185115e6051"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getDataPrioridade()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="64" y="206" width="15" height="15" uuid="3dac0e7c-7318-4925-89f6-090ac3719292">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isMultiplasPrioridades()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="84" y="206" width="451" height="20" uuid="1b3db02a-56aa-4b56-8915-b17cf5ef0e49"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[If several priorities are claimed, check the box and use a continuation sheet giving the above required information for
+each priority claimed.
+]]></text>
+			</staticText>
+		</band>
+		<band height="440">
+			<rectangle>
+				<reportElement x="0" y="14" width="555" height="414" uuid="6cd3c817-a359-421c-b091-b56a5f399204"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="63" y="32" width="476" height="20" uuid="4b6abb30-3184-4b16-8e4b-2001b2ce5beb"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[THE MARK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="34" width="33" height="34" forecolor="#000000" uuid="52833a4e-4f6e-4bf0-82b1-e4297782a44d"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="68" width="225" height="40" uuid="c63fd920-ce77-42ba-b94f-0926631c46f2"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(a) Place the reproduction of the mark, as it appears in the basic application or basic registration, in the square below.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="309" y="68" width="227" height="40" uuid="ba17189f-8818-47e8-966a-2a828afae571"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(b) Where the reproduction in item (a) is in black and white and color is claimed in item 8, place a color reproduction of the mark in the square below.]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="63" y="124" width="231" height="231" uuid="b1e458f7-7ad1-4a7c-916d-d91a9975dc61"/>
+			</rectangle>
+			<image>
+				<reportElement x="65" y="126" width="227" height="227" uuid="ec2d7ea0-d1be-425a-8a58-7139ec14ccc8"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{folhaRosto}.getProtocoloMadri().getMarcaImagem1().getBytes()))]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="306" y="123" width="231" height="231" uuid="e2b0c25d-be99-4950-9428-ea399ae38a2c"/>
+			</rectangle>
+			<image>
+				<reportElement x="308" y="124" width="227" height="227" uuid="2d797aca-3ed5-462f-b58e-62d071146f87"/>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{folhaRosto}.getProtocoloMadri().getMarcaImagem1().getBytes()))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="69" y="367" width="15" height="15" uuid="3c246dd4-c121-4218-9f80-959ce7e8e865">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isMarcaPadrao()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="89" y="367" width="447" height="20" uuid="f22e39f1-701a-4808-83e4-4c94437ca2cd"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(c) The applicant declares that he wishes the mark to be considered as a mark in standard characters.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="69" y="393" width="15" height="15" uuid="fa001a2d-abb4-4324-8406-11c22ff71c17">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isMarcaEmCores()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="90" y="393" width="447" height="25" uuid="ed336f4a-8453-4633-80a0-2a19e4ce791d"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(d) The mark consists exclusively of a color or a combination of colors as such, without any figurative element.]]></text>
+			</staticText>
+		</band>
+		<band height="218">
+			<rectangle>
+				<reportElement x="0" y="16" width="555" height="189" uuid="b47aa757-d562-45e7-bfe5-21edc4daa7cf"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="64" y="26" width="476" height="20" uuid="0e2110cf-a8bf-4535-8ef7-39ac87cda3d5"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COLOR(S) CLAIMED]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="26" width="33" height="34" forecolor="#000000" uuid="516e1051-f727-4fec-844c-ef3c80f28309"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[8]]></text>
+			</staticText>
+			<image>
+				<reportElement x="69" y="61" width="15" height="15" uuid="3ccb47ce-ce43-4b8e-8fcd-97fdc235baa2">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isMarcaDistintiva()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="90" y="62" width="450" height="20" uuid="1f1386f2-d8a5-4bc3-9d03-abcb12973943"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(a) The applicant claims color as a distinctive feature of the mark.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="88" width="190" height="20" uuid="d4ddea07-338b-4bc9-bc04-ba72e766305a"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Color or combination of colors claimed:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="69" y="110" width="471" height="20" uuid="88687432-2c13-4280-8f50-a6cd67406ddc"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getCoresReivindicadas()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="169" width="470" height="20" uuid="3b039557-975a-4c9a-a022-24d51c85ba19"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacaoCoresReivindicadas()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="69" y="137" width="470" height="30" uuid="0c4b7b27-8523-433d-be25-96e69287966b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(b) Indication, for each color, of the principal parts of the mark that are in that color (as may be required by certain designated Contracting Parties):]]></text>
+			</staticText>
+		</band>
+		<band height="644">
+			<rectangle>
+				<reportElement x="0" y="9" width="555" height="618" uuid="5d9bbe1f-3e80-45c1-95e5-9cea98582f0d"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="62" y="18" width="476" height="20" uuid="053e8dcf-93b7-4eb0-b865-061407306527"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[COLOR(S) CLAIMED]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="18" width="33" height="34" forecolor="#000000" uuid="e3b2c4e3-0f1d-4b1f-bf53-9d92fdc77d31"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="52" width="473" height="27" uuid="8d7821df-49fd-4819-9102-34c35af53a2a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(a) Transliteration of the mark (this information is compulsory where the mark consists of or contains matter in characters other than Latin characters, or numerals other than Arabic or Roman numerals):]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="65" y="82" width="473" height="20" uuid="8427bec0-c94a-424b-9379-0fc83b92613d"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().getTransliteracaoDaMarca()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="65" y="107" width="472" height="30" uuid="2b98427c-4886-40de-aabf-77d251f45f24"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(b) Translation of the mark (as may be required by certain designated Contracting Parties; do not check the box in item (c) if you provide a translation in this item):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="82" y="138" width="100" height="20" uuid="55b1450d-7066-4f6b-9011-0d5694db6b4e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(i) into English:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="159" width="99" height="20" uuid="7c56b04a-6359-450d-9767-a855cce51b52"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(ii) into French:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="83" y="180" width="99" height="20" uuid="eb9d088a-fb2c-41f0-b97b-a6ba32c8c29c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(iii) into Spanish:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="182" y="138" width="355" height="20" uuid="e621a13f-6baa-4008-9ea0-094eb6dd82dd"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().getTransliteracaoParaIngles()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="182" y="159" width="355" height="20" uuid="d9c0b057-4218-45d6-9b16-ab7f814ac9ea"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().getTransliteracaoParaFrances()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="182" y="180" width="354" height="20" uuid="c7f191b9-cbe6-40da-99cd-fe158ba40742"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().getTransliteracaoParaEspanhol()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="64" y="212" width="15" height="15" uuid="3d14366b-2fa1-49a6-9d01-9136fe774b82">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().isMarcaNaoTransliterada()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="85" y="212" width="452" height="31" uuid="70bd40c6-c0c1-4705-8113-770758b15940"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(c) The words contained in the mark have no meaning (and therefore cannot be translated; do not check this box if you have provided a translation in item (b)).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="251" width="472" height="20" uuid="c5f2c430-a0da-42e3-9d26-23148bbbe337"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(d) Where applicable, check the relevant box or boxes below:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="85" y="274" width="15" height="15" uuid="b188fb6e-2672-4707-8f1c-4017f3423024">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().isMarca3D()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="85" y="294" width="15" height="15" uuid="b2ce91e8-3f2b-4dc4-8976-91bf73140715">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().isMarcaSonora()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="85" y="314" width="15" height="15" uuid="bb2cbbd4-512c-449a-88ce-f107a1136af0">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().isMarcaColetiva()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="106" y="274" width="100" height="20" uuid="dff8f07a-188e-433f-96e5-848f2c5dda7d"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Three-dimensional mark]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="107" y="294" width="100" height="20" uuid="1f266839-c739-45c5-a5f0-934c263d9717"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Sound mark]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="108" y="316" width="324" height="20" uuid="2095c488-7284-48ef-8bbd-97a48e97d7e8"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Collective mark, certification mark, or guarantee mark]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="342" width="472" height="31" uuid="541e9d79-6461-4856-9cf5-0688f6ac3d50"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(e) Description of the mark (as may be required by certain designated Contracting Parties, such as, for example, the United States of America)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="85" y="375" width="452" height="43" uuid="c83e2626-1a84-4a4f-ba62-b3c104cb7e0c"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(i) Description of the mark contained in the basic application or basic registration, where applicable (only use this item if the Office of origin requires you to include this description in the international application for the purposes of item 13(a)(ii) of this form)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="85" y="420" width="452" height="20" uuid="66313215-beba-42cf-88cd-a5622137d5f7"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().getDescricaoMarca()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="85" y="446" width="452" height="34" uuid="372d9f4b-a6f6-4a0e-a4c0-2eb5124d2ac7"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(ii) Voluntary description of the mark (any description of the mark by words, including the description contained in the basic application or registration, if you were not required to provide this description in item (e)(i) above):]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="85" y="482" width="452" height="20" uuid="9659d4fe-700d-4768-9839-438be23fbc4e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().getDescricaoVoluntariaMarca()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="65" y="509" width="472" height="20" uuid="ec395d0d-2e76-40b4-93b1-168f1952dc3a"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(f) Verbal elements of the mark (where applicable):]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="65" y="531" width="473" height="20" uuid="43e9f534-3715-455d-bba6-994d64468706"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().getElementosVerbais()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="65" y="560" width="471" height="20" uuid="5d8a01e6-efba-4f62-ba25-d7ba417eb615"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(g) The applicant wishes to disclaim protection for the following element(s) of the mark:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="65" y="582" width="471" height="20" uuid="4e8435d4-28eb-46ea-b35d-b0497c22c4ae"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().getRenunciaDeProtecao()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="34" width="40" height="20" uuid="60bfe492-7f65-4914-97c4-d547291c3576"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[MM2(E) – ]]></text>
+			</staticText>
+			<textField pattern="MMMMM-yy">
+				<reportElement x="40" y="34" width="77" height="20" uuid="31e9823d-43e7-4857-9fda-2df7e8125fb5"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

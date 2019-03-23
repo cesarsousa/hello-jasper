@@ -15,11 +15,11 @@ public class RelatorioTeste {
 	
 	public static void main(String[] args)
 	{
-		gerarRelatorioDeClientes();
+		//gerarRelatorioDeClientes();
 		
-		gerarRelatorioDeUF();
+		//gerarRelatorioDeUF();
 		
-		gerarRelatorioDeMunicipios();
+		//gerarRelatorioDeMunicipios();
 		
 		gerarRelatorioMadri();
 		
@@ -27,8 +27,10 @@ public class RelatorioTeste {
 
 private static void gerarRelatorioMadri() {
 		try {
+			System.out.println("Inicio da geração.");
 			FormularioMadriRelatorio formularioMadriRelatorio = new FormularioMadriRelatorio();
 			formularioMadriRelatorio.relatorio();
+			System.out.println("Documento gerado com sucesso.");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

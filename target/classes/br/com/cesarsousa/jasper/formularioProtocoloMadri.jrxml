@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
 	<property name="ireport.zoom" value="1.3310000000000013"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="1175"/>
+	<property name="ireport.y" value="1174"/>
 	<title>
 		<band height="93" splitType="Stretch">
 			<rectangle>
@@ -332,7 +332,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<text><![CDATA[Telephone:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="59" y="449" width="476" height="98" uuid="fc3c74e3-577b-4abb-abe1-a8661242cdaa"/>
+				<reportElement x="59" y="450" width="476" height="98" uuid="fc3c74e3-577b-4abb-abe1-a8661242cdaa"/>
 				<textElement textAlignment="Justified"/>
 				<text><![CDATA[By providing an e-mail address, any further correspondence from the International Bureau related to this international application and its resulting international registration will be sent only electronically and, therefore, you will no longer receive any paper correspondence.  Likewise, any further correspondence from the International Bureau related to other international applications or international registrations for which the same e-mail address has been, or will be, provided will also be sent only electronically.  Please note that, for the purpose of electronic communication, there can be only one e-mail address recorded per each international registration.]]></text>
 			</staticText>
