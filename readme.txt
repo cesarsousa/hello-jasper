@@ -9,3 +9,7 @@ https://www.baeldung.com/java-base64-encode-and-decode
 site base 64
 https://www.base64encode.org/
 
+todo
+
+alterar a classe contratante serviço
+criar a lista de outras designacoes

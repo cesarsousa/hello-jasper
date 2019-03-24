@@ -94,6 +94,11 @@ private String idioma;
 	private List<ContratanteEServico> contratantesEServicos;
 	
 	private List<Pais> designacoes;
+	private List<OutraDesignacao> outrasDesignacoes;
+	private boolean designacaoFranca;
+	private boolean designacaoAlemanha;
+	private boolean designacaoItalia;
+	private boolean designacaoEspanha;
 	
 	private String dataEnvio;
 	private String escritorioOrigem;
@@ -312,16 +317,20 @@ private String idioma;
 		this.multiplasPrioridades = multiplasPrioridades;
 	}
 
-	public void setContratantesEServicos(List<ContratanteEServico> contratantesEServicos) {
-		this.contratantesEServicos = contratantesEServicos;
-	}
-
 	public List<Pais> getDesignacoes() {
 		return designacoes;
 	}
 	
 	public void setDesignacoes(List<Pais> designacoes) {
 		this.designacoes = designacoes;
+	}
+	
+	public List<OutraDesignacao> getOutrasDesignacoes() {
+		return outrasDesignacoes;
+	}
+	
+	public void setOutrasDesignacoes(List<OutraDesignacao> outrasDesignacoes) {
+		this.outrasDesignacoes = outrasDesignacoes;
 	}
 
 	public String getDataEnvio() {
@@ -356,4 +365,36 @@ private String idioma;
 		this.emailResponsavel = emailResponsavel;
 	}
 
+	public boolean isDesignacaoFranca() {
+		return designacaoFranca;
+	}
+
+	public void setDesignacaoFranca(boolean designacaoFranca) {
+		this.designacaoFranca = designacaoFranca;
+	}
+
+	public boolean isDesignacaoAlemanha() {
+		return designacaoAlemanha;
+	}
+
+	public void setDesignacaoAlemanha(boolean designacaoAlemanha) {
+		this.designacaoAlemanha = designacaoAlemanha;
+	}
+
+	public boolean isDesignacaoItalia() {
+		return designacaoItalia;
+	}
+
+	public void setDesignacaoItalia(boolean designacaoItalia) {
+		this.designacaoItalia = designacaoItalia;
+	}
+
+	public boolean isDesignacaoEspanha() {
+		return designacaoEspanha;
+	}
+
+	public void setDesignacaoEspanha(boolean designacaoEspanha) {
+		this.designacaoEspanha = designacaoEspanha;
+	}	
+	
 }

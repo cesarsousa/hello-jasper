@@ -1,12 +1,9 @@
 package br.com.cesarsousa.model;
 
-import java.util.List;
-
-
 public class ContratanteEServico {
 	
 	private String parteContratante;
-	private List<BemEServico> bensEservicos;
+	private String definicaoClassesServicos;
 	
 	public ContratanteEServico() {
 		super();
@@ -19,13 +16,14 @@ public class ContratanteEServico {
 	public void setParteContratante(String parteContratante) {
 		this.parteContratante = parteContratante;
 	}
-	
-	public List<BemEServico> getBensEservicos() {
-		return bensEservicos;
-	}
-	
-	public void setBensEservicos(List<BemEServico> bensEservicos) {
-		this.bensEservicos = bensEservicos;
+
+	public String getDefinicaoClassesServicos() {
+		return definicaoClassesServicos;
 	}
 
+	public void setDefinicaoClassesServicos(String definicaoClassesServicos) {
+		this.definicaoClassesServicos = definicaoClassesServicos;
+	}
+	
+	
 }

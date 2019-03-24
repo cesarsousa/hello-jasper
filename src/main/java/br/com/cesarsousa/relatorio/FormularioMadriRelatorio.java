@@ -10,6 +10,7 @@ import br.com.cesarsousa.model.ContratanteEServico;
 import br.com.cesarsousa.model.DireitoAoArquivo;
 import br.com.cesarsousa.model.FolhaRosto;
 import br.com.cesarsousa.model.IndicacoesDiversas;
+import br.com.cesarsousa.model.OutraDesignacao;
 import br.com.cesarsousa.model.Pais;
 import br.com.cesarsousa.model.ProtocoloMadri;
 import br.com.cesarsousa.model.Representante;
@@ -139,10 +140,10 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 		List<ContratanteEServico> contratantesEServicos = new ArrayList<ContratanteEServico>();
 		ContratanteEServico contratanteEServico1 = new ContratanteEServico();
 		contratanteEServico1.setParteContratante("parte contratante 1");
-		contratanteEServico1.setBensEservicos(bensEServicos);
+		contratanteEServico1.setDefinicaoClassesServicos("lista de classes, bem 1 e serviços.");
 		ContratanteEServico contratanteEServico2 = new ContratanteEServico();
 		contratanteEServico2.setParteContratante("parte contratante 2");
-		contratanteEServico2.setBensEservicos(bensEServicos);
+		contratanteEServico2.setDefinicaoClassesServicos("lista de classes, bem 2 e serviços 2, serviços de prestação 3, bem 25.");
 		contratantesEServicos.add(contratanteEServico1);
 		contratantesEServicos.add(contratanteEServico2);
 		protocoloMadri.setContratantesEservicos(contratantesEServicos);
@@ -157,11 +158,34 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 		Pais paisus = new Pais();
 		paisus.setSigla("US");
 		paisus.setNome("Estados Unidos da América");
+		Pais paises = new Pais();
+		paises.setSigla("ES");
+		paises.setNome("Espanha");
 
 		designacoes.add(paisbr);
 		designacoes.add(paisfr);
 		designacoes.add(paisus);
+		designacoes.add(paises);
 		protocoloMadri.setDesignacoes(designacoes);
+		
+		protocoloMadri.setDesignacaoAlemanha(true);
+		protocoloMadri.setDesignacaoEspanha(true);
+		protocoloMadri.setDesignacaoFranca(true);
+		protocoloMadri.setDesignacaoItalia(true);
+		
+		List<OutraDesignacao> outrasDesignacoes = new ArrayList<>();
+		OutraDesignacao outra1 = new OutraDesignacao();
+		outra1.setSiglaNome("GR grafe");		
+		outrasDesignacoes.add(outra1);
+		OutraDesignacao outra2 = new OutraDesignacao();
+		outra2.setSiglaNome("BO Bolenfro");		
+		outrasDesignacoes.add(outra2);
+		OutraDesignacao outra3 = new OutraDesignacao();
+		outra3.setSiglaNome("HY Hyuinh");		
+		outrasDesignacoes.add(outra3);
+		protocoloMadri.setOutrasDesignacoes(outrasDesignacoes);
+		
+		
 
 		protocoloMadri.setDataEnvio("01/01/2015");
 		protocoloMadri.setEscritorioOrigem("escritório de origem");
