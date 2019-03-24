@@ -2,7 +2,8 @@ package br.com.cesarsousa.model;
 
 public enum TipoFolhaRosto {
 	
-	FORMULARIOPROTOCOLOMADRIMM2("formularioProtocoloMadriMM2");
+	FORMULARIOPROTOCOLOMADRIMM2US("formularioProtocoloMadriMM2US"),
+	FORMULARIOPROTOCOLOMADRIMM2ES("formularioProtocoloMadriMM2ES");
 	
 	private String tipo;
 

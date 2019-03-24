@@ -24,16 +24,19 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 		List listagemRelatorio = new ArrayList<>();
 
 		HashMap<String, Object> paramRelatorio = new HashMap<String, Object>();
-		paramRelatorio.put("folhaRosto", obterFolhaRosto());
+		
+		FolhaRosto folhaRosto = obterFolhaRosto();
+		
+		paramRelatorio.put("folhaRosto", folhaRosto);
 
-		String nomeRelatorio = "formularioProtocoloMadriMM2";
+		String nomeRelatorio = folhaRosto.getTipoFolhaRosto().name();
 
 		gerarRelatorio(nomeRelatorio, paramRelatorio, listagemRelatorio);
 	}
 
 	private FolhaRosto obterFolhaRosto() {
 		FolhaRosto folhaRosto = new FolhaRosto();
-		folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM2);
+		folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM2US);
 		folhaRosto.setProtocoloMadri(obterProtocoloMadri());
 		//folhaRosto.setProtocoloMadri(new ProtocoloMadri());
 		return folhaRosto;

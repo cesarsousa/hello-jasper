@@ -13,3 +13,4 @@ todo
 
 alterar a classe contratante serviço
 criar a lista de outras designacoes
+alterar tipo da folha de rosto mm2 para ingles espanhol
