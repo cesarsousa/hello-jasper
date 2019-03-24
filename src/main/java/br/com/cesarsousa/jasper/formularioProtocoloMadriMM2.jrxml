@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
-	<property name="ireport.zoom" value="0.8481952367449697"/>
+	<property name="ireport.zoom" value="1.0263162364614142"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="2787"/>
+	<property name="ireport.y" value="4161"/>
 	<parameter name="folhaRosto" class="java.lang.Object"/>
 	<parameter name="IMAGENS_DIR" class="java.lang.String"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
@@ -1231,7 +1231,160 @@ each priority claimed.
 				<text><![CDATA[(7) Protection in BQ (Bonaire, Saint Eustatius and Saba) is granted automatically with the designation (see Information Notice No. 27/2011).]]></text>
 			</staticText>
 		</band>
-		<band height="103"/>
+		<band height="150">
+			<rectangle>
+				<reportElement x="0" y="12" width="555" height="131" uuid="241ecd93-20c7-46b3-869b-f8356657a5c0"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="21" width="33" height="34" forecolor="#000000" uuid="cd54bf1a-2ff9-456c-98eb-8ae0086b8940"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[12]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="25" width="476" height="20" uuid="c63d32b4-2745-439b-ba65-714de9c8fc2c"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SIGNATURE BY THE APPLICANT AND OR HIS REPRESENTATIVE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="47" width="474" height="20" uuid="d732d165-6faf-46c6-9292-9dcc84833aca"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(if required or allowed by the Office of origin)
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="77" width="474" height="20" uuid="ac81857b-0b3e-4112-94fd-4a29f848bed1"/>
+				<textElement>
+					<font size="9" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[By signing this form, I declare that I am entitled to sign it under the applicable law:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="68" y="126" width="471" height="1" uuid="33b3933b-6d49-44f2-8b34-51bb03c064aa"/>
+			</line>
+		</band>
+		<band height="432">
+			<rectangle>
+				<reportElement x="0" y="15" width="555" height="406" uuid="cf8f1e00-ba0a-4c07-8c58-bc10884015eb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="21" y="27" width="33" height="34" forecolor="#000000" uuid="2395b82d-d1d8-4cc7-b483-4f9f4a3b346a"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[13]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="31" width="476" height="30" uuid="f5e174b1-1e43-44c9-8eaf-88c1591fd06b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CERTIFICATION AND SIGNATURE OF THE INTERNATIONAL APPLICATION BY THE OFFICE OF ORIGIN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="71" width="100" height="20" uuid="388344fc-b4ed-4444-9b5d-4709eafba4d2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(a) Certification]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="93" width="147" height="20" uuid="86e87147-7838-4d88-99e2-dc42f66dd83e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[The Office of origin certifies]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="114" width="251" height="20" uuid="572b77f9-3dc4-4deb-ba24-75b95ce650df"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(i) that the request to present this application was received on]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="331" y="114" width="101" height="20" uuid="7578f8b2-4844-481f-8f03-fab12a790273"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getDataEnvio()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="437" y="114" width="71" height="20" uuid="0afa6cb0-c30e-4305-9d3a-1773364ddfa7"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(dd/mm/yyyy).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="79" y="137" width="461" height="103" uuid="90a5a3c2-8160-427f-b2e8-b0a629383c6a"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(ii) that the applicant named in item 2 is the same as the applicant named in the basic application or the holder named in the basic registration mentioned in item 5, as the case may be, that any indication given in item 7(d), 9(d) or 9(e)(i) appears also in the basic application or the basic registration, as the case may be, that the mark in item 7(a) is the same as in the basic application or the basic registration, as the case may be, that, if color is claimed as a distinctive feature of the mark in the basic application or the basic registration, the same claim is included in item 8 or that, if color is claimed in item 8 without having being claimed in the basic application or basic registration, the mark in the basic application or basic registration is in fact in the color or combination of colors claimed, and that the goods and services listed in item 10 are covered by the list of goods and services appearing in the basic application or basic registration, as the case may be.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="244" width="458" height="20" uuid="da3f947d-1af0-447b-be17-845c4c59752f"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Where the international application is based on two or more basic applications or basic registrations, the above declaration shall be deemed to apply to all those basic applications or basic registrations.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="274" width="116" height="20" uuid="3b206357-e15b-4a3e-a2a0-825f1f6c63e0"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(b) Name of the Office:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="182" y="274" width="100" height="20" uuid="d0323995-a5f7-4966-a515-8c3d30c39f9e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getEscritorioOrigem()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="67" y="297" width="471" height="20" uuid="e0c3fb95-0a32-4d33-be65-2312568a6d69"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(c) Name and signature of the official signing on behalf of the Office:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="319" width="471" height="20" uuid="f1fb1c2e-614c-4b49-a5f0-8c3b1fa10975"/>
+				<textElement>
+					<font size="9" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[By signing this form, I declare that I am entitled to sign it under the applicable law]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="66" y="341" width="472" height="20" uuid="93edba71-cb2a-4dc5-b9b8-e000b31b6271"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getNomeResponsavel()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="66" y="364" width="471" height="20" uuid="3a4bb506-2751-4472-a380-7a683d170761"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(d) Name and e-mail address of the contact person in the Office:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="67" y="386" width="469" height="20" uuid="ff9133a4-1d1c-456a-9d4f-da8dc38d8031"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getEmailResponsavel()]]></textFieldExpression>
+			</textField>
+		</band>
 	</detail>
 	<pageFooter>
 		<band height="54" splitType="Stretch">
