@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formularioProtocoloMadriMM2US_subreportContratantesServicos" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="954524f6-7e89-475c-9540-251e4f6cd6cc">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="parteContratante" class="java.lang.String"/>
+	<field name="definicaoClassesServicos" class="java.lang.String"/>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="185" height="20" uuid="f210e3db-6b8b-4b9b-879f-f702b5ae0fb8"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Contracting Party]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="212" y="5" width="332" height="29" uuid="ce2b2224-415a-4b89-a23e-fa1db36b3f2f"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Class(es) or list of goods and services for which protection is sought in this Contracting Party]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="185" height="20" uuid="f8f41b46-a6ac-49be-acb5-6c6c4efb2671"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{parteContratante}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="212" y="0" width="332" height="20" uuid="9475f61f-195f-4869-b1cc-5a81523147cf"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{definicaoClassesServicos}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

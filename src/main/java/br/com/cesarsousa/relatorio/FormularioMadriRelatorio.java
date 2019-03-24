@@ -36,7 +36,8 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 
 	private FolhaRosto obterFolhaRosto() {
 		FolhaRosto folhaRosto = new FolhaRosto();
-		folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM2US);
+		//folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM2US);
+		folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM2ES);
 		folhaRosto.setProtocoloMadri(obterProtocoloMadri());
 		//folhaRosto.setProtocoloMadri(new ProtocoloMadri());
 		return folhaRosto;
@@ -119,6 +120,7 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 		indicacoesDiversas.setTransliteracaoParaIngles("transliteração inglês");
 		indicacoesDiversas.setTransliteracaoParaFrances("transliteração francês");
 		indicacoesDiversas.setTransliteracaoParaEspanhol("transliteração espanhol");
+		indicacoesDiversas.setMarcaNaoTransliterada(true);
 		indicacoesDiversas.setMarca3D(true);
 		indicacoesDiversas.setMarcaSonora(true);
 		indicacoesDiversas.setMarcaColetiva(true);
@@ -131,10 +133,10 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 		List<BemEServico> bensEServicos = new ArrayList<BemEServico>();
 		BemEServico bemEServico1 = new BemEServico();
 		bemEServico1.setClasse("classe a");
-		bemEServico1.setServico("bens e serviços diversos");
+		bemEServico1.setServico("bens e serviços diversos a");
 		BemEServico bemEServico2 = new BemEServico();
 		bemEServico2.setClasse("classe b");
-		bemEServico2.setServico("bens de produção industrial e serviços de manufatura de cargas");
+		bemEServico2.setServico("bens e serviços diversos b");
 		bensEServicos.add(bemEServico1);
 		bensEServicos.add(bemEServico2);
 		protocoloMadri.setBensEServicos(bensEServicos);
@@ -147,7 +149,7 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 		contratanteEServico1.setDefinicaoClassesServicos("lista de classes, bem 1 e serviços.");
 		ContratanteEServico contratanteEServico2 = new ContratanteEServico();
 		contratanteEServico2.setParteContratante("parte contratante 2");
-		contratanteEServico2.setDefinicaoClassesServicos("lista de classes, bem 2 e serviços 2, serviços de prestação 3, bem 25.");
+		contratanteEServico2.setDefinicaoClassesServicos("lista de classes, bem 2 e serviços.");
 		contratantesEServicos.add(contratanteEServico1);
 		contratantesEServicos.add(contratanteEServico2);
 		protocoloMadri.setContratantesEservicos(contratantesEServicos);

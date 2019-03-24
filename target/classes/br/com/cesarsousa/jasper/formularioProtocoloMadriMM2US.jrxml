@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formularioProtocoloMadriMM2US" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="6544"/>
+	<property name="ireport.y" value="6414"/>
 	<parameter name="folhaRosto" class="java.lang.Object"/>
 	<parameter name="IMAGENS_DIR" class="java.lang.String"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
@@ -100,7 +100,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<text><![CDATA[Office’s reference:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="444" y="53" width="100" height="61" uuid="1521f63e-a61c-440e-bac5-553749ba074b"/>
+				<reportElement x="344" y="73" width="197" height="41" uuid="1521f63e-a61c-440e-bac5-553749ba074b"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9"/>
 				</textElement>
@@ -352,7 +352,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<reportElement x="5" y="217" width="545" height="1" uuid="4134d282-8a63-486f-ae72-bb518d43eaa6"/>
 			</line>
 		</band>
-		<band height="326">
+		<band height="359">
 			<staticText>
 				<reportElement x="59" y="26" width="476" height="20" uuid="2787f691-c4bb-4191-a542-75ab1c8e9de6"/>
 				<textElement>
@@ -467,6 +467,10 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			<line>
 				<reportElement x="5" y="10" width="545" height="1" uuid="c7794096-ff71-4817-9517-c38bc7a93e98"/>
 			</line>
+			<textField>
+				<reportElement x="82" y="309" width="452" height="36" uuid="34c9e18f-a49d-4959-809b-d06c746b3e1a"/>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getDireitoAoArquivo().getEnderecoContratanteComercial()]]></textFieldExpression>
+			</textField>
 		</band>
 		<band height="236">
 			<staticText>
@@ -580,7 +584,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			<subreport>
 				<reportElement x="61" y="45" width="477" height="42" uuid="6e1036e6-1575-45f1-bcf4-89342c84407d"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{folhaRosto}.getProtocoloMadri().getAplicacoesRegistros())]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2_subreportAplicacoesRegistros.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2US_subreportAplicacoesRegistros.jasper"]]></subreportExpression>
 			</subreport>
 			<line>
 				<reportElement x="5" y="9" width="545" height="1" uuid="9097bfa5-a7f6-47fb-bfcc-2ea8fe03e6ed"/>
@@ -1065,7 +1069,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			<subreport>
 				<reportElement x="65" y="176" width="475" height="42" uuid="8fdba651-91ba-40aa-9b05-63bfb6534df1"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{folhaRosto}.getProtocoloMadri().getBensEServicos())]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2_subreportBensServicos.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2US_subreportBensServicos.jasper"]]></subreportExpression>
 			</subreport>
 			<image>
 				<reportElement x="70" y="238" width="15" height="15" uuid="d95ab396-0d05-40c6-a259-4a3c011472b5">
@@ -1083,7 +1087,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			<subreport>
 				<reportElement x="65" y="278" width="475" height="44" uuid="5824f4a4-8684-4fda-9d3b-701b644944f0"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{folhaRosto}.getProtocoloMadri().getContratantesEServicos())]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2_subreportContratantesServicos.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2US_subreportContratantesServicos.jasper"]]></subreportExpression>
 			</subreport>
 			<line>
 				<reportElement x="5" y="6" width="545" height="1" uuid="83205641-fcda-49fc-8f1f-a24c6fe35d2d"/>
@@ -1114,7 +1118,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			<subreport>
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="63" y="119" width="473" height="42" uuid="e536a563-8c6d-44dd-b5ef-ecb03085c40d"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{folhaRosto}.getProtocoloMadri().getDesignacoes())]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2_subreportDesignacoes.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2US_subreportDesignacoes.jasper"]]></subreportExpression>
 			</subreport>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="175" width="100" height="20" uuid="254d9e55-89c3-46b1-abb1-9bb2900028d6"/>
@@ -1126,14 +1130,14 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			<subreport>
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="204" width="474" height="41" uuid="23ddf606-a108-42af-be64-6cc3765df50b"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{folhaRosto}.getProtocoloMadri().getOutrasDesignacoes())]]></dataSourceExpression>
-				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2_subreportOutrasDesignacoes.jasper"]]></subreportExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2US_subreportOutrasDesignacoes.jasper"]]></subreportExpression>
 			</subreport>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="63" y="258" width="472" height="53" uuid="f767f59b-d15a-49b3-937f-0e595f43f719"/>
-				<textElement textAlignment="Justified">
+				<textElement textAlignment="Justified" markup="styled">
 					<font size="6"/>
 				</textElement>
-				<text><![CDATA[1 The designation of the European Union covers the following Member States: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, The Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, United Kingdom.]]></text>
+				<text><![CDATA[1 The designation of the European Union covers the following Member States: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, The Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, United Kingdom. If the European Union is designated, it is compulsory to indicate a second language before the Office of the European Union.]]></text>
 			</staticText>
 			<image>
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="84" y="359" width="10" height="10" uuid="aaf5f776-50fe-4495-b48f-9b48dc5a0fd2">
@@ -1245,13 +1249,6 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				</textElement>
 				<text><![CDATA[(7) Protection in BQ (Bonaire, Saint Eustatius and Saba) is granted automatically with the designation (see Information Notice No. 27/2011).]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="63" y="313" width="471" height="33" uuid="17f0a9e2-9107-45db-84ec-61d03c88f01d"/>
-				<textElement textAlignment="Justified">
-					<font fontName="Arial" size="6"/>
-				</textElement>
-				<text><![CDATA[If the European Union is designated, it is compulsory to indicate a second language before the Office of the European Union.]]></text>
-			</staticText>
 			<line>
 				<reportElement x="5" y="9" width="545" height="1" uuid="39747243-29fb-4d18-a248-5d09d1addea7"/>
 			</line>
@@ -1347,63 +1344,63 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<text><![CDATA[(dd/mm/yyyy).]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="79" y="137" width="461" height="103" uuid="90a5a3c2-8160-427f-b2e8-b0a629383c6a"/>
+				<reportElement x="79" y="137" width="461" height="120" uuid="90a5a3c2-8160-427f-b2e8-b0a629383c6a"/>
 				<textElement textAlignment="Justified">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[(ii) that the applicant named in item 2 is the same as the applicant named in the basic application or the holder named in the basic registration mentioned in item 5, as the case may be, that any indication given in item 7(d), 9(d) or 9(e)(i) appears also in the basic application or the basic registration, as the case may be, that the mark in item 7(a) is the same as in the basic application or the basic registration, as the case may be, that, if color is claimed as a distinctive feature of the mark in the basic application or the basic registration, the same claim is included in item 8 or that, if color is claimed in item 8 without having being claimed in the basic application or basic registration, the mark in the basic application or basic registration is in fact in the color or combination of colors claimed, and that the goods and services listed in item 10 are covered by the list of goods and services appearing in the basic application or basic registration, as the case may be.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="80" y="244" width="458" height="20" uuid="da3f947d-1af0-447b-be17-845c4c59752f"/>
+				<reportElement x="80" y="257" width="458" height="36" uuid="da3f947d-1af0-447b-be17-845c4c59752f"/>
 				<textElement textAlignment="Justified">
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[Where the international application is based on two or more basic applications or basic registrations, the above declaration shall be deemed to apply to all those basic applications or basic registrations.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="66" y="274" width="116" height="20" uuid="3b206357-e15b-4a3e-a2a0-825f1f6c63e0"/>
+				<reportElement x="66" y="293" width="116" height="20" uuid="3b206357-e15b-4a3e-a2a0-825f1f6c63e0"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[(b) Name of the Office:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="182" y="274" width="100" height="20" uuid="d0323995-a5f7-4966-a515-8c3d30c39f9e"/>
+				<reportElement x="182" y="293" width="100" height="20" uuid="d0323995-a5f7-4966-a515-8c3d30c39f9e"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getEscritorioOrigem()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="67" y="297" width="471" height="20" uuid="e0c3fb95-0a32-4d33-be65-2312568a6d69"/>
+				<reportElement x="67" y="316" width="471" height="20" uuid="e0c3fb95-0a32-4d33-be65-2312568a6d69"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[(c) Name and signature of the official signing on behalf of the Office:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="67" y="319" width="471" height="20" uuid="f1fb1c2e-614c-4b49-a5f0-8c3b1fa10975"/>
+				<reportElement x="67" y="338" width="471" height="20" uuid="f1fb1c2e-614c-4b49-a5f0-8c3b1fa10975"/>
 				<textElement>
 					<font size="9" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[By signing this form, I declare that I am entitled to sign it under the applicable law]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="66" y="341" width="472" height="20" uuid="93edba71-cb2a-4dc5-b9b8-e000b31b6271"/>
+				<reportElement x="66" y="360" width="472" height="20" uuid="93edba71-cb2a-4dc5-b9b8-e000b31b6271"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getNomeResponsavel()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="66" y="364" width="471" height="20" uuid="3a4bb506-2751-4472-a380-7a683d170761"/>
+				<reportElement x="66" y="383" width="471" height="20" uuid="3a4bb506-2751-4472-a380-7a683d170761"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[(d) Name and e-mail address of the contact person in the Office:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="67" y="386" width="469" height="20" uuid="ff9133a4-1d1c-456a-9d4f-da8dc38d8031"/>
+				<reportElement x="67" y="405" width="469" height="20" uuid="ff9133a4-1d1c-456a-9d4f-da8dc38d8031"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>

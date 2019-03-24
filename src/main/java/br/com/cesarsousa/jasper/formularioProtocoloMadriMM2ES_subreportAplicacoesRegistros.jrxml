@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formularioProtocoloMadriMM2ES_subreportAplicacoesRegistros" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="be6c1200-7cd7-4d5f-bce4-e1d61ecc5fe3">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="numero" class="java.lang.String"/>
+	<field name="data" class="java.lang.String"/>
+	<field name="tipo" class="java.lang.String"/>
+	<detail>
+		<band height="38" splitType="Stretch">
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="224" height="38" uuid="f11a5dda-15e1-4ce6-92b4-e9e5a3d6bb3c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipo}.equals("APLICACAO") ? "Número de la solicitud de base: "  + $F{numero} : "Número del registro de base: " + $F{numero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement stretchType="RelativeToBandHeight" x="241" y="0" width="310" height="38" uuid="aba9728f-fff8-407b-8d67-917636722805"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipo}.equals("APLICACAO") ? "Fecha de la solicitud de base: " + $F{data} + " (dd/mm/yyyy)" : "Fecha del registro de base: " + $F{data} + " (dd/mm/yyyy)"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
