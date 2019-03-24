@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
-	<property name="ireport.zoom" value="1.0263162364614142"/>
+	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="4161"/>
+	<property name="ireport.y" value="6531"/>
 	<parameter name="folhaRosto" class="java.lang.Object"/>
 	<parameter name="IMAGENS_DIR" class="java.lang.String"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["C:\\Users\\cesar\\eclipse-oxygen-workspace\\hello-jasper\\src\\main\\java\\br\\com\\cesarsousa\\jasper\\"]]></defaultValueExpression>
 	</parameter>
 	<title>
-		<band height="93" splitType="Stretch">
+		<band height="81" splitType="Stretch">
 			<staticText>
 				<reportElement x="11" y="36" width="515" height="36" uuid="825a867f-659c-4999-96e7-90fe53d605c2"/>
 				<textElement textAlignment="Center">
-					<font fontName="Arial" size="12" isBold="true"/>
+					<font fontName="SansSerif" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[APPLICATION FOR INTERNATIONAL REGISTRATION
 GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
@@ -21,7 +21,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			<staticText>
 				<reportElement x="473" y="0" width="82" height="28" uuid="47f55a23-6d96-4c7e-9a53-3238d002d222"/>
 				<textElement>
-					<font fontName="Arial" size="20" isBold="true"/>
+					<font fontName="SansSerif" size="20" isBold="true"/>
 				</textElement>
 				<text><![CDATA[MM2(E)]]></text>
 			</staticText>
@@ -29,12 +29,6 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 	</title>
 	<detail>
 		<band height="643" splitType="Stretch">
-			<rectangle>
-				<reportElement x="0" y="0" width="331" height="135" uuid="bb6a9948-fefa-43d2-a221-ca7954b47f0d"/>
-			</rectangle>
-			<rectangle>
-				<reportElement x="331" y="0" width="224" height="135" uuid="9b2944b8-06ad-4ee7-9d58-6b6a2a2b8c15"/>
-			</rectangle>
 			<staticText>
 				<reportElement x="103" y="10" width="137" height="20" uuid="10d61b2d-2cd4-4743-bbfe-546f9579a064"/>
 				<textElement textAlignment="Center">
@@ -101,43 +95,31 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			<staticText>
 				<reportElement x="344" y="53" width="100" height="20" uuid="b4203fb2-8b17-4906-8531-2038ad1a3a29"/>
 				<textElement>
-					<font fontName="Arial" size="9"/>
+					<font fontName="SansSerif" size="9"/>
 				</textElement>
 				<text><![CDATA[Office’s reference:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="444" y="53" width="100" height="20" uuid="1521f63e-a61c-440e-bac5-553749ba074b"/>
+				<reportElement x="444" y="53" width="100" height="61" uuid="1521f63e-a61c-440e-bac5-553749ba074b"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
 				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getReferenciaEscritorio()]]></textFieldExpression>
 			</textField>
-			<rectangle>
-				<reportElement x="0" y="135" width="555" height="73" uuid="656749b8-c681-401e-b71d-f34bf21cb5c4"/>
-			</rectangle>
 			<staticText>
 				<reportElement x="59" y="148" width="414" height="20" uuid="615d28b0-3561-450a-ade0-5a41d952e909"/>
 				<textElement>
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[CONTRACTING PARTY WHOSE OFFICE IS THE OFFICE OF ORIGIN]]></text>
 			</staticText>
 			<line>
-				<reportElement x="59" y="189" width="437" height="1" uuid="9212c5c7-c680-4d07-87ca-32662f37193e"/>
+				<reportElement x="59" y="197" width="437" height="1" uuid="9212c5c7-c680-4d07-87ca-32662f37193e"/>
 			</line>
-			<rectangle>
-				<reportElement x="0" y="208" width="555" height="418" forecolor="#000000" backcolor="#FFFFFF" uuid="cb9264cf-7e07-42ef-b63d-bf7b4f339a07">
-					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().isPreferenciaIdiomaIngles()]]></printWhenExpression>
-				</reportElement>
-			</rectangle>
-			<staticText>
-				<reportElement x="20" y="153" width="33" height="34" forecolor="#000000" backcolor="#000000" uuid="a9f2b9af-05ae-4a62-972d-a7af8e62b5c3"/>
-				<textElement textAlignment="Center">
-					<font fontName="Arial" size="24"/>
-				</textElement>
-				<text><![CDATA[1]]></text>
-			</staticText>
 			<staticText>
 				<reportElement x="59" y="224" width="414" height="20" uuid="5f56fef1-a8f2-4440-82b8-5ad243770f99"/>
 				<textElement>
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[APPLICANT]]></text>
 			</staticText>
@@ -335,21 +317,28 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().getNacionalidadePessoaJuridica()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="22" y="227" width="33" height="34" forecolor="#000000" uuid="a172dbb7-d035-4dee-9d75-77e6f58a483e"/>
+				<reportElement x="20" y="215" width="33" height="34" forecolor="#000000" uuid="7464bfd1-6c9d-4640-b304-c7edfe58837b"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
 				<text><![CDATA[2]]></text>
 			</staticText>
+			<staticText>
+				<reportElement x="21" y="141" width="33" height="34" forecolor="#000000" uuid="277fee7d-b5a9-438c-abb8-8134557b77ae"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<line>
+				<reportElement x="332" y="9" width="1" height="114" uuid="a7741788-e8b9-44aa-ad98-13176e53867a"/>
+			</line>
 		</band>
 		<band height="342">
-			<rectangle>
-				<reportElement positionType="Float" x="0" y="7" width="555" height="325" uuid="0b29f2f0-c3ae-413c-951b-e3d495dfa331"/>
-			</rectangle>
 			<staticText>
 				<reportElement x="59" y="26" width="476" height="20" uuid="2787f691-c4bb-4191-a542-75ab1c8e9de6"/>
 				<textElement>
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ENTITLEMENT TO FILE]]></text>
 			</staticText>
@@ -441,7 +430,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<text><![CDATA[(ii) if the box in paragraph (a)(iv) of the present item has been checked, the address of the applicant’s industrial or commercial establishment in the territory of that Contracting Party.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="21" y="31" width="33" height="34" forecolor="#000000" uuid="efa10fee-b90c-4250-9973-64618c4f8c4d"/>
+				<reportElement x="21" y="16" width="33" height="34" forecolor="#000000" uuid="efa10fee-b90c-4250-9973-64618c4f8c4d"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
@@ -449,13 +438,10 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			</staticText>
 		</band>
 		<band height="262">
-			<rectangle>
-				<reportElement x="0" y="9" width="555" height="242" uuid="1141708f-896c-495a-9e04-040478a24484"/>
-			</rectangle>
 			<staticText>
 				<reportElement x="59" y="23" width="476" height="20" uuid="edb74d3b-1207-497f-8121-921a2518f99d"/>
 				<textElement>
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[APPOINTMENT OF A REPRESENTATIVE]]></text>
 			</staticText>
@@ -535,7 +521,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getRepresentante().getEmail()]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="20" y="28" width="33" height="34" forecolor="#000000" uuid="0664b5b5-8435-4f33-b998-05c51bfa3f57"/>
+				<reportElement x="20" y="14" width="33" height="34" forecolor="#000000" uuid="0664b5b5-8435-4f33-b998-05c51bfa3f57"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
@@ -543,11 +529,8 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			</staticText>
 		</band>
 		<band height="112">
-			<rectangle>
-				<reportElement x="0" y="6" width="555" height="92" uuid="5a7837bb-b1a6-41a6-b771-56f24ae30fd4"/>
-			</rectangle>
 			<staticText>
-				<reportElement x="22" y="22" width="33" height="34" forecolor="#000000" uuid="ab912300-e25d-4725-b520-c0ed2ffd641a"/>
+				<reportElement x="22" y="9" width="33" height="34" forecolor="#000000" uuid="ab912300-e25d-4725-b520-c0ed2ffd641a"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
@@ -556,7 +539,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			<staticText>
 				<reportElement x="59" y="18" width="476" height="20" uuid="30430ec6-c42c-4560-a4de-e0e0906592dd"/>
 				<textElement>
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[BASIC APPLICATION OR BASIC REGISTRATION]]></text>
 			</staticText>
@@ -567,18 +550,15 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			</subreport>
 		</band>
 		<band height="256">
-			<rectangle>
-				<reportElement x="0" y="7" width="555" height="236" uuid="0c1fb6a2-42a8-4d47-9cb7-9adeaa8aad33"/>
-			</rectangle>
 			<staticText>
 				<reportElement x="59" y="22" width="476" height="20" uuid="8152d5b5-d203-468f-b91c-cce435aa771c"/>
 				<textElement>
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[PRIORITY CLAIMED]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="21" y="27" width="33" height="34" forecolor="#000000" uuid="b9c468c5-015f-4379-98c8-f642e1cb9e6e"/>
+				<reportElement x="21" y="13" width="33" height="34" forecolor="#000000" uuid="b9c468c5-015f-4379-98c8-f642e1cb9e6e"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
@@ -599,14 +579,14 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="64" y="75" width="156" height="20" uuid="37cbf7f0-d037-4c32-a5ce-eefd263ae3e6"/>
+				<reportElement x="64" y="75" width="217" height="20" uuid="37cbf7f0-d037-4c32-a5ce-eefd263ae3e6"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
 				<text><![CDATA[Office of earlier filing:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="64" y="99" width="156" height="20" uuid="96c6f503-fd41-45db-820e-33d7a9d1e232"/>
+				<reportElement x="64" y="99" width="217" height="20" uuid="96c6f503-fd41-45db-820e-33d7a9d1e232"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
@@ -635,14 +615,14 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getDefinicaoPrioridadesReivindicadas()]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="225" y="75" width="310" height="20" uuid="eaacee33-1dfe-467f-a342-03ec889693a7"/>
+				<reportElement x="285" y="75" width="196" height="20" uuid="eaacee33-1dfe-467f-a342-03ec889693a7"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getEscritorioPrioridade()]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="225" y="99" width="310" height="20" uuid="5712b35f-4a9a-43d4-ab53-9dd4144460ee"/>
+				<reportElement x="285" y="100" width="196" height="20" uuid="5712b35f-4a9a-43d4-ab53-9dd4144460ee"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
@@ -672,18 +652,15 @@ each priority claimed.
 			</staticText>
 		</band>
 		<band height="440">
-			<rectangle>
-				<reportElement x="0" y="14" width="555" height="414" uuid="6cd3c817-a359-421c-b091-b56a5f399204"/>
-			</rectangle>
 			<staticText>
 				<reportElement x="63" y="32" width="476" height="20" uuid="4b6abb30-3184-4b16-8e4b-2001b2ce5beb"/>
 				<textElement>
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[THE MARK]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="25" y="34" width="33" height="34" forecolor="#000000" uuid="52833a4e-4f6e-4bf0-82b1-e4297782a44d"/>
+				<reportElement x="25" y="22" width="33" height="34" forecolor="#000000" uuid="52833a4e-4f6e-4bf0-82b1-e4297782a44d"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
@@ -703,16 +680,10 @@ each priority claimed.
 				</textElement>
 				<text><![CDATA[(b) Where the reproduction in item (a) is in black and white and color is claimed in item 8, place a color reproduction of the mark in the square below.]]></text>
 			</staticText>
-			<rectangle>
-				<reportElement x="63" y="124" width="231" height="231" uuid="b1e458f7-7ad1-4a7c-916d-d91a9975dc61"/>
-			</rectangle>
 			<image>
 				<reportElement x="65" y="126" width="227" height="227" uuid="ec2d7ea0-d1be-425a-8a58-7139ec14ccc8"/>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{folhaRosto}.getProtocoloMadri().getMarcaImagem1().getBytes()))]]></imageExpression>
 			</image>
-			<rectangle>
-				<reportElement x="306" y="123" width="231" height="231" uuid="e2b0c25d-be99-4950-9428-ea399ae38a2c"/>
-			</rectangle>
 			<image>
 				<reportElement x="308" y="124" width="227" height="227" uuid="2d797aca-3ed5-462f-b58e-62d071146f87"/>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64($P{folhaRosto}.getProtocoloMadri().getMarcaImagem1().getBytes()))]]></imageExpression>
@@ -745,18 +716,15 @@ each priority claimed.
 			</staticText>
 		</band>
 		<band height="218">
-			<rectangle>
-				<reportElement x="0" y="16" width="555" height="189" uuid="b47aa757-d562-45e7-bfe5-21edc4daa7cf"/>
-			</rectangle>
 			<staticText>
 				<reportElement x="64" y="26" width="476" height="20" uuid="0e2110cf-a8bf-4535-8ef7-39ac87cda3d5"/>
 				<textElement>
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[COLOR(S) CLAIMED]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="25" y="26" width="33" height="34" forecolor="#000000" uuid="516e1051-f727-4fec-844c-ef3c80f28309"/>
+				<reportElement x="25" y="16" width="33" height="34" forecolor="#000000" uuid="516e1051-f727-4fec-844c-ef3c80f28309"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
@@ -805,18 +773,15 @@ each priority claimed.
 			</staticText>
 		</band>
 		<band height="644">
-			<rectangle>
-				<reportElement x="0" y="9" width="555" height="618" uuid="5d9bbe1f-3e80-45c1-95e5-9cea98582f0d"/>
-			</rectangle>
 			<staticText>
 				<reportElement x="62" y="18" width="476" height="20" uuid="053e8dcf-93b7-4eb0-b865-061407306527"/>
 				<textElement>
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[MISCELLANEOUS INDICATIONS]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="22" y="18" width="33" height="34" forecolor="#000000" uuid="e3b2c4e3-0f1d-4b1f-bf53-9d92fdc77d31"/>
+				<reportElement x="22" y="9" width="33" height="34" forecolor="#000000" uuid="e3b2c4e3-0f1d-4b1f-bf53-9d92fdc77d31"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
@@ -1009,11 +974,8 @@ each priority claimed.
 			</textField>
 		</band>
 		<band height="354">
-			<rectangle>
-				<reportElement x="0" y="7" width="555" height="329" uuid="29d318d0-267b-4905-9fa5-3c19e05df0d8"/>
-			</rectangle>
 			<staticText>
-				<reportElement x="22" y="15" width="33" height="34" forecolor="#000000" uuid="bce805c7-dced-419f-a5f3-6a496876e859"/>
+				<reportElement x="22" y="5" width="33" height="34" forecolor="#000000" uuid="bce805c7-dced-419f-a5f3-6a496876e859"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
@@ -1022,14 +984,14 @@ each priority claimed.
 			<staticText>
 				<reportElement x="63" y="15" width="476" height="20" uuid="a5f8186a-3c44-4649-8741-9ee7aaa38517"/>
 				<textElement>
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[GOODS AND SERVICES]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="65" y="42" width="474" height="52" uuid="9b7ea47d-df03-4a3f-8a1c-e83a36e2933d"/>
 				<textElement textAlignment="Justified">
-					<font size="9" isBold="true"/>
+					<font fontName="SansSerif" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[You can find indications that are pre-accepted by the International Bureau in the Madrid Goods & Services Manager (MGS) at www.wipo.int/mgs/. By using these indications you can avoid possible irregularities concerning the classification of goods and services and a delay in the recording of the international registration.
 ]]></text>
@@ -1037,7 +999,7 @@ each priority claimed.
 			<staticText>
 				<reportElement x="65" y="100" width="474" height="45" uuid="2c64085b-b90b-4729-a3f4-5e642d43462f"/>
 				<textElement textAlignment="Justified">
-					<font size="9" isBold="true"/>
+					<font fontName="SansSerif" size="9" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Please make consistent use of a semicolon (;) to clearly specify the goods and services indications in your list, e.g.: 09 Scientific, optical and electronic apparatus and instruments; screens for photoengraving; computers. 35 Advertising; compilation of statistics; commercial information agencies. ]]></text>
 			</staticText>
@@ -1072,12 +1034,9 @@ each priority claimed.
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2_subreportContratantesServicos.jasper"]]></subreportExpression>
 			</subreport>
 		</band>
-		<band height="641">
-			<rectangle>
-				<reportElement x="0" y="14" width="555" height="616" uuid="ee1fb7be-62db-4985-b366-00c4325b187c"/>
-			</rectangle>
+		<band height="748">
 			<staticText>
-				<reportElement x="22" y="19" width="33" height="34" forecolor="#000000" uuid="b01cccdb-ee50-40d5-810a-98b139e2d7fd"/>
+				<reportElement x="23" y="12" width="33" height="34" forecolor="#000000" uuid="b01cccdb-ee50-40d5-810a-98b139e2d7fd"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
@@ -1086,130 +1045,123 @@ each priority claimed.
 			<staticText>
 				<reportElement x="62" y="22" width="476" height="20" uuid="cbda6278-c617-4763-b74d-d0be8031e4ab"/>
 				<textElement>
-					<font fontName="Arial" isBold="true"/>
+					<font fontName="SansSerif" isBold="true"/>
 				</textElement>
 				<text><![CDATA[DESIGNATIONS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="63" y="52" width="474" height="58" uuid="7264f3f6-d0e6-4ec2-9a25-3f7ac2ad38e5"/>
 				<textElement textAlignment="Justified">
-					<font isBold="true"/>
+					<font size="9" isBold="false"/>
 				</textElement>
 				<text><![CDATA[(Information on the procedures in the national or regional Offices of the members of the Madrid System may be found at the following website: www.wipo.int/madrid/en/members/ipoffices_info.html. Additional information may be found in the information notices available at: www.wipo.int/madrid/en/notices/.)]]></text>
 			</staticText>
 			<subreport>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="63" y="119" width="473" height="42" uuid="e536a563-8c6d-44dd-b5ef-ecb03085c40d"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="63" y="119" width="473" height="42" uuid="e536a563-8c6d-44dd-b5ef-ecb03085c40d"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{folhaRosto}.getProtocoloMadri().getDesignacoes())]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2_subreportDesignacoes.jasper"]]></subreportExpression>
 			</subreport>
 			<staticText>
-				<reportElement x="62" y="175" width="100" height="20" uuid="254d9e55-89c3-46b1-abb1-9bb2900028d6"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="175" width="100" height="20" uuid="254d9e55-89c3-46b1-abb1-9bb2900028d6"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<text><![CDATA[Others:]]></text>
 			</staticText>
 			<subreport>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="62" y="204" width="474" height="41" uuid="23ddf606-a108-42af-be64-6cc3765df50b"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="204" width="474" height="41" uuid="23ddf606-a108-42af-be64-6cc3765df50b"/>
 				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{folhaRosto}.getProtocoloMadri().getOutrasDesignacoes())]]></dataSourceExpression>
 				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2_subreportOutrasDesignacoes.jasper"]]></subreportExpression>
 			</subreport>
 			<staticText>
-				<reportElement x="63" y="258" width="472" height="38" uuid="f767f59b-d15a-49b3-937f-0e595f43f719"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="63" y="258" width="472" height="53" uuid="f767f59b-d15a-49b3-937f-0e595f43f719"/>
 				<textElement textAlignment="Justified">
 					<font size="7"/>
 				</textElement>
 				<text><![CDATA[1 The designation of the European Union covers the following Member States: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, The Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, United Kingdom.]]></text>
 			</staticText>
-			<staticText>
-				<reportElement x="62" y="300" width="472" height="16" uuid="9f8097e9-c805-4dd2-856c-326e5a90cca1"/>
-				<textElement textAlignment="Justified">
-					<font size="7"/>
-				</textElement>
-				<text><![CDATA[If the European Union is designated, it is compulsory to indicate a second language before the Office of the European Union:]]></text>
-			</staticText>
 			<image>
-				<reportElement x="67" y="320" width="10" height="10" uuid="aaf5f776-50fe-4495-b48f-9b48dc5a0fd2">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="84" y="359" width="10" height="10" uuid="aaf5f776-50fe-4495-b48f-9b48dc5a0fd2">
 					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isDesignacaoFranca()]]></printWhenExpression>
 				</reportElement>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="82" y="320" width="38" height="12" uuid="9634ca8d-f582-4c9f-84eb-cd8ae5ccfec8"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="102" y="359" width="38" height="15" uuid="9634ca8d-f582-4c9f-84eb-cd8ae5ccfec8"/>
 				<textElement>
 					<font size="7"/>
 				</textElement>
 				<text><![CDATA[French]]></text>
 			</staticText>
 			<image>
-				<reportElement x="67" y="337" width="10" height="10" uuid="863b6da6-5ffe-4a8f-b039-a97d348791d8">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="84" y="384" width="10" height="10" uuid="863b6da6-5ffe-4a8f-b039-a97d348791d8">
 					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isDesignacaoAlemanha()]]></printWhenExpression>
 				</reportElement>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="82" y="336" width="38" height="12" uuid="648f9dbc-d729-4dc8-bb4f-a399073b2535"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="103" y="382" width="38" height="15" uuid="648f9dbc-d729-4dc8-bb4f-a399073b2535"/>
 				<textElement>
 					<font size="7"/>
 				</textElement>
 				<text><![CDATA[German]]></text>
 			</staticText>
 			<image>
-				<reportElement x="67" y="353" width="10" height="10" uuid="66abd756-ad29-4dad-adb6-d6d0d0d564d4">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="85" y="406" width="10" height="10" uuid="66abd756-ad29-4dad-adb6-d6d0d0d564d4">
 					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isDesignacaoItalia()]]></printWhenExpression>
 				</reportElement>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="83" y="353" width="38" height="12" uuid="cd125b4c-0d3f-4c4a-a1fa-30d647ce9865"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="103" y="406" width="38" height="15" uuid="cd125b4c-0d3f-4c4a-a1fa-30d647ce9865"/>
 				<textElement>
 					<font size="7"/>
 				</textElement>
 				<text><![CDATA[Italian]]></text>
 			</staticText>
 			<image>
-				<reportElement x="67" y="370" width="10" height="10" uuid="0c7cb048-b4c0-4edc-bdfd-286e988d53b7">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="85" y="431" width="10" height="10" uuid="0c7cb048-b4c0-4edc-bdfd-286e988d53b7">
 					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isDesignacaoEspanha()]]></printWhenExpression>
 				</reportElement>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement x="82" y="369" width="38" height="12" uuid="f55fdc54-a5e8-4f5b-befa-4500333d1a27"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="103" y="429" width="38" height="15" uuid="f55fdc54-a5e8-4f5b-befa-4500333d1a27"/>
 				<textElement>
 					<font size="7"/>
 				</textElement>
 				<text><![CDATA[Spanish]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="63" y="392" width="472" height="27" uuid="e6ffac17-e0d1-4376-83bf-8557404e61f6"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="458" width="472" height="41" uuid="e6ffac17-e0d1-4376-83bf-8557404e61f6"/>
 				<textElement textAlignment="Justified">
 					<font size="7"/>
 				</textElement>
 				<text><![CDATA[Moreover, if the applicant wishes to claim the seniority of an earlier mark registered in, or for, a Member State of the European Union, the official form MM17 must be annexed to the present international application.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="64" y="420" width="470" height="33" uuid="67fd665f-e08d-42c7-adaf-4b5efe8548b4"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="499" width="470" height="51" uuid="67fd665f-e08d-42c7-adaf-4b5efe8548b4"/>
 				<textElement textAlignment="Justified">
 					<font size="7"/>
 				</textElement>
 				<text><![CDATA[(2) By designating Brunei Darussalam, India, Ireland, Lesotho, Malawi, Mozambique, New Zealand, Singapore or the United Kingdom, the applicant declares that he has the intention that the mark will be used by him or with his consent in that country in connection with the goods and services identified in this application.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="65" y="455" width="469" height="28" uuid="4537befc-1a7b-43de-bd8d-90d6e6df0f1a"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="552" width="469" height="33" uuid="4537befc-1a7b-43de-bd8d-90d6e6df0f1a"/>
 				<textElement textAlignment="Justified">
 					<font size="7"/>
 				</textElement>
 				<text><![CDATA[(3) The designation of the African Intellectual Property Organization covers the following Member States: Benin, Burkina Faso, Cameroon, Central African Republic, Chad, Comoros, Congo, Côte d’Ivoire, Equatorial Guinea, Gabon, Guinea, Guinea-Bissau, Mali, Mauritania, Niger, Senegal, Togo. ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="65" y="486" width="469" height="30" uuid="503a1504-ca58-414c-be95-0022e46c4fa2"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="585" width="469" height="40" uuid="503a1504-ca58-414c-be95-0022e46c4fa2"/>
 				<textElement textAlignment="Justified">
 					<font size="7"/>
 				</textElement>
 				<text><![CDATA[(4) If the United States of America is designated, it is compulsory to annex to the present international application the official form (MM18) containing the declaration of intention to use the mark required by this Contracting Party. Item 2(f) of the present form should also be completed.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="65" y="518" width="469" height="53" uuid="15abe734-175a-44f8-ac7c-19d0e4ec0116"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="625" width="469" height="73" uuid="15abe734-175a-44f8-ac7c-19d0e4ec0116"/>
 				<textElement textAlignment="Justified">
 					<font size="7"/>
 				</textElement>
@@ -1217,26 +1169,30 @@ each priority claimed.
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="65" y="573" width="470" height="20" uuid="e5d5bef5-9a41-4871-9b83-3ae4ee4046fc"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="698" width="470" height="20" uuid="e5d5bef5-9a41-4871-9b83-3ae4ee4046fc"/>
 				<textElement>
 					<font size="7"/>
 				</textElement>
-				<text><![CDATA[(6) Territorial entity previously part of the former Netherlands Antilles]]></text>
+				<text><![CDATA[(6) Territorial entity previously part of the former Netherlands Antilles.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="65" y="595" width="470" height="20" uuid="01e1a0e2-cf38-490b-9100-d99ebdbdf52b"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="63" y="718" width="470" height="30" uuid="01e1a0e2-cf38-490b-9100-d99ebdbdf52b"/>
 				<textElement>
 					<font size="7"/>
 				</textElement>
 				<text><![CDATA[(7) Protection in BQ (Bonaire, Saint Eustatius and Saba) is granted automatically with the designation (see Information Notice No. 27/2011).]]></text>
 			</staticText>
+			<staticText>
+				<reportElement x="63" y="313" width="471" height="40" uuid="17f0a9e2-9107-45db-84ec-61d03c88f01d"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[If the European Union is designated, it is compulsory to indicate a second language before the Office of the European Union.]]></text>
+			</staticText>
 		</band>
 		<band height="150">
-			<rectangle>
-				<reportElement x="0" y="12" width="555" height="131" uuid="241ecd93-20c7-46b3-869b-f8356657a5c0"/>
-			</rectangle>
 			<staticText>
-				<reportElement x="20" y="21" width="33" height="34" forecolor="#000000" uuid="cd54bf1a-2ff9-456c-98eb-8ae0086b8940"/>
+				<reportElement x="25" y="15" width="33" height="34" forecolor="#000000" uuid="cd54bf1a-2ff9-456c-98eb-8ae0086b8940"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
@@ -1269,11 +1225,8 @@ each priority claimed.
 			</line>
 		</band>
 		<band height="432">
-			<rectangle>
-				<reportElement x="0" y="15" width="555" height="406" uuid="cf8f1e00-ba0a-4c07-8c58-bc10884015eb"/>
-			</rectangle>
 			<staticText>
-				<reportElement x="21" y="27" width="33" height="34" forecolor="#000000" uuid="2395b82d-d1d8-4cc7-b483-4f9f4a3b346a"/>
+				<reportElement x="26" y="21" width="33" height="34" forecolor="#000000" uuid="2395b82d-d1d8-4cc7-b483-4f9f4a3b346a"/>
 				<textElement textAlignment="Center">
 					<font size="24"/>
 				</textElement>
@@ -1282,7 +1235,7 @@ each priority claimed.
 			<staticText>
 				<reportElement x="65" y="31" width="476" height="30" uuid="f5e174b1-1e43-44c9-8eaf-88c1591fd06b"/>
 				<textElement textAlignment="Justified">
-					<font fontName="Arial" size="10" isBold="true"/>
+					<font fontName="SansSerif" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[CERTIFICATION AND SIGNATURE OF THE INTERNATIONAL APPLICATION BY THE OFFICE OF ORIGIN]]></text>
 			</staticText>
@@ -1401,6 +1354,13 @@ each priority claimed.
 					<font fontName="Arial" size="8"/>
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="33" width="145" height="20" uuid="8921c142-d895-4afd-9395-dbc85250a663"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageFooter>

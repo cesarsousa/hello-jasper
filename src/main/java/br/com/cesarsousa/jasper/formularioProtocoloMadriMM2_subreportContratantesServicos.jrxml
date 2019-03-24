@@ -27,14 +27,14 @@
 		<band height="26" splitType="Stretch">
 			<textField>
 				<reportElement x="0" y="0" width="185" height="20" uuid="f8f41b46-a6ac-49be-acb5-6c6c4efb2671"/>
-				<textElement>
+				<textElement textAlignment="Justified">
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{parteContratante}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="212" y="0" width="332" height="20" uuid="9475f61f-195f-4869-b1cc-5a81523147cf"/>
-				<textElement>
+				<textElement textAlignment="Justified">
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{definicaoClassesServicos}]]></textFieldExpression>
