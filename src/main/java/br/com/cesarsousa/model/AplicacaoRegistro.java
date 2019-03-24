@@ -28,5 +28,9 @@ public class AplicacaoRegistro {
 	public void setData(String data) {
 		this.data = data;
 	}
+	
+	public String getTipo() {
+		return this.tipoAplicacaoRegistro.name();
+	}
 
 }

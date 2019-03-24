@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
-	<property name="ireport.zoom" value="1.8150000000000004"/>
+	<property name="ireport.zoom" value="1.9965000000000026"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="4455"/>
+	<property name="ireport.y" value="6057"/>
 	<parameter name="folhaRosto" class="java.lang.Object"/>
 	<parameter name="IMAGENS_DIR" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\cesar\\eclipse-oxygen-workspace\\hello-jasper\\src\\main\\java\\br\\com\\cesarsousa\\jasper\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="listaAplicacoesRegistros" class="java.util.List"/>
 	<title>
 		<band height="93" splitType="Stretch">
 			<staticText>
@@ -539,9 +543,9 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<text><![CDATA[4]]></text>
 			</staticText>
 		</band>
-		<band height="77">
+		<band height="112">
 			<rectangle>
-				<reportElement x="0" y="6" width="555" height="61" uuid="5a7837bb-b1a6-41a6-b771-56f24ae30fd4"/>
+				<reportElement x="0" y="6" width="555" height="92" uuid="5a7837bb-b1a6-41a6-b771-56f24ae30fd4"/>
 			</rectangle>
 			<staticText>
 				<reportElement x="22" y="22" width="33" height="34" forecolor="#000000" uuid="ab912300-e25d-4725-b520-c0ed2ffd641a"/>
@@ -557,6 +561,11 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				</textElement>
 				<text><![CDATA[BASIC APPLICATION OR BASIC REGISTRATION]]></text>
 			</staticText>
+			<subreport>
+				<reportElement x="61" y="45" width="477" height="42" uuid="6e1036e6-1575-45f1-bcf4-89342c84407d"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{folhaRosto}.getProtocoloMadri().getAplicacoesRegistros())]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2_subreportAplicacoesRegistros.jasper"]]></subreportExpression>
+			</subreport>
 		</band>
 		<band height="256">
 			<rectangle>
@@ -805,7 +814,7 @@ each priority claimed.
 				<textElement>
 					<font fontName="Arial" isBold="true"/>
 				</textElement>
-				<text><![CDATA[COLOR(S) CLAIMED]]></text>
+				<text><![CDATA[MISCELLANEOUS INDICATIONS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="22" y="18" width="33" height="34" forecolor="#000000" uuid="e3b2c4e3-0f1d-4b1f-bf53-9d92fdc77d31"/>
@@ -999,6 +1008,49 @@ each priority claimed.
 				</textElement>
 				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getIndicacoesDiversas().getRenunciaDeProtecao()]]></textFieldExpression>
 			</textField>
+		</band>
+		<band height="286">
+			<staticText>
+				<reportElement x="22" y="15" width="33" height="34" forecolor="#000000" uuid="bce805c7-dced-419f-a5f3-6a496876e859"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="63" y="15" width="476" height="20" uuid="a5f8186a-3c44-4649-8741-9ee7aaa38517"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GOODS AND SERVICES]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="42" width="474" height="52" uuid="9b7ea47d-df03-4a3f-8a1c-e83a36e2933d"/>
+				<textElement textAlignment="Justified">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[You can find indications that are pre-accepted by the International Bureau in the Madrid Goods & Services Manager (MGS) at www.wipo.int/mgs/. By using these indications you can avoid possible irregularities concerning the classification of goods and services and a delay in the recording of the international registration.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="100" width="474" height="45" uuid="2c64085b-b90b-4729-a3f4-5e642d43462f"/>
+				<textElement textAlignment="Justified">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Please make consistent use of a semicolon (;) to clearly specify the goods and services indications in your list, e.g.: 09 Scientific, optical and electronic apparatus and instruments; screens for photoengraving; computers. 35 Advertising; compilation of statistics; commercial information agencies. ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="152" width="473" height="20" uuid="4b25beb0-f64f-4d30-a965-877ab7eb0bce"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[(a) Indicate below the goods and services for which the international registration is sought:]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="65" y="176" width="475" height="42" uuid="8fdba651-91ba-40aa-9b05-63bfb6534df1"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{folhaRosto}.getProtocoloMadri().getBensEServicos())]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM2_subreportBensServicos.jasper"]]></subreportExpression>
+			</subreport>
 		</band>
 	</detail>
 	<pageFooter>
