@@ -7,16 +7,16 @@
 	<field name="data" class="java.lang.String"/>
 	<field name="tipo" class="java.lang.String"/>
 	<detail>
-		<band height="58" splitType="Stretch">
+		<band height="38" splitType="Stretch">
 			<textField>
-				<reportElement x="0" y="9" width="224" height="38" uuid="f11a5dda-15e1-4ce6-92b4-e9e5a3d6bb3c"/>
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="224" height="38" uuid="f11a5dda-15e1-4ce6-92b4-e9e5a3d6bb3c"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{tipo}.equals("APLICACAO") ? "Basic application number: "  + $F{numero} : "Basic registration number: " + $F{numero}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="234" y="9" width="310" height="38" uuid="aba9728f-fff8-407b-8d67-917636722805"/>
+				<reportElement stretchType="RelativeToBandHeight" x="241" y="0" width="310" height="38" uuid="aba9728f-fff8-407b-8d67-917636722805"/>
 				<textElement>
 					<font size="9"/>
 				</textElement>

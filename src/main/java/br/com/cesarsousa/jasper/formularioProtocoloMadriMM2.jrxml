@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
 	<property name="ireport.zoom" value="1.5"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="6364"/>
+	<property name="ireport.y" value="0"/>
 	<parameter name="folhaRosto" class="java.lang.Object"/>
 	<parameter name="IMAGENS_DIR" class="java.lang.String"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
@@ -102,7 +102,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			<textField>
 				<reportElement x="444" y="53" width="100" height="61" uuid="1521f63e-a61c-440e-bac5-553749ba074b"/>
 				<textElement textAlignment="Justified">
-					<font size="9"/>
+					<font fontName="Arial" size="9"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getReferenciaEscritorio()]]></textFieldExpression>
 			</textField>
@@ -1131,7 +1131,7 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="63" y="258" width="472" height="53" uuid="f767f59b-d15a-49b3-937f-0e595f43f719"/>
 				<textElement textAlignment="Justified">
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[1 The designation of the European Union covers the following Member States: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, The Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, United Kingdom.]]></text>
 			</staticText>
@@ -1142,9 +1142,11 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="102" y="359" width="38" height="15" uuid="9634ca8d-f582-4c9f-84eb-cd8ae5ccfec8"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="102" y="359" width="38" height="15" uuid="9634ca8d-f582-4c9f-84eb-cd8ae5ccfec8">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isDesignacaoFranca()]]></printWhenExpression>
+				</reportElement>
 				<textElement>
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[French]]></text>
 			</staticText>
@@ -1155,9 +1157,11 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="103" y="382" width="38" height="15" uuid="648f9dbc-d729-4dc8-bb4f-a399073b2535"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="103" y="382" width="38" height="15" uuid="648f9dbc-d729-4dc8-bb4f-a399073b2535">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isDesignacaoAlemanha()]]></printWhenExpression>
+				</reportElement>
 				<textElement>
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[German]]></text>
 			</staticText>
@@ -1168,9 +1172,11 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="103" y="406" width="38" height="15" uuid="cd125b4c-0d3f-4c4a-a1fa-30d647ce9865"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="103" y="406" width="38" height="15" uuid="cd125b4c-0d3f-4c4a-a1fa-30d647ce9865">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isDesignacaoItalia()]]></printWhenExpression>
+				</reportElement>
 				<textElement>
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[Italian]]></text>
 			</staticText>
@@ -1181,66 +1187,68 @@ GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="103" y="429" width="38" height="15" uuid="f55fdc54-a5e8-4f5b-befa-4500333d1a27"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="103" y="429" width="38" height="15" uuid="f55fdc54-a5e8-4f5b-befa-4500333d1a27">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().isDesignacaoEspanha()]]></printWhenExpression>
+				</reportElement>
 				<textElement>
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[Spanish]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="450" width="472" height="41" uuid="e6ffac17-e0d1-4376-83bf-8557404e61f6"/>
 				<textElement textAlignment="Justified">
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[Moreover, if the applicant wishes to claim the seniority of an earlier mark registered in, or for, a Member State of the European Union, the official form MM17 must be annexed to the present international application.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="492" width="470" height="51" uuid="67fd665f-e08d-42c7-adaf-4b5efe8548b4"/>
 				<textElement textAlignment="Justified">
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[(2) By designating Brunei Darussalam, India, Ireland, Lesotho, Malawi, Mozambique, New Zealand, Singapore or the United Kingdom, the applicant declares that he has the intention that the mark will be used by him or with his consent in that country in connection with the goods and services identified in this application.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="545" width="469" height="38" uuid="4537befc-1a7b-43de-bd8d-90d6e6df0f1a"/>
 				<textElement textAlignment="Justified">
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[(3) The designation of the African Intellectual Property Organization covers the following Member States: Benin, Burkina Faso, Cameroon, Central African Republic, Chad, Comoros, Congo, Côte d’Ivoire, Equatorial Guinea, Gabon, Guinea, Guinea-Bissau, Mali, Mauritania, Niger, Senegal, Togo. ]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="585" width="469" height="40" uuid="503a1504-ca58-414c-be95-0022e46c4fa2"/>
 				<textElement textAlignment="Justified">
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[(4) If the United States of America is designated, it is compulsory to annex to the present international application the official form (MM18) containing the declaration of intention to use the mark required by this Contracting Party. Item 2(f) of the present form should also be completed.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="625" width="469" height="73" uuid="15abe734-175a-44f8-ac7c-19d0e4ec0116"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="625" width="469" height="61" uuid="15abe734-175a-44f8-ac7c-19d0e4ec0116"/>
 				<textElement textAlignment="Justified">
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[(5) Cuba and Japan have made a notification under Rule 34(3)(a) of the Common Regulations. Their respective individual fees are payable in two parts. Therefore, if Cuba or Japan is designated, only the first part of the applicable individual fee is payable at the time of filing the present international application. The second part will have to be paid only if the Office of the Contracting Party concerned is satisfied that the mark which is the subject of the international registration qualifies for protection. The date by which the second part must be paid, and the amount due, will be notified to the holder of the international registration at a later stage.
 ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="698" width="470" height="20" uuid="e5d5bef5-9a41-4871-9b83-3ae4ee4046fc"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="62" y="688" width="470" height="20" uuid="e5d5bef5-9a41-4871-9b83-3ae4ee4046fc"/>
 				<textElement>
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[(6) Territorial entity previously part of the former Netherlands Antilles.]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="63" y="718" width="470" height="30" uuid="01e1a0e2-cf38-490b-9100-d99ebdbdf52b"/>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="63" y="711" width="470" height="30" uuid="01e1a0e2-cf38-490b-9100-d99ebdbdf52b"/>
 				<textElement>
-					<font size="7"/>
+					<font size="6"/>
 				</textElement>
 				<text><![CDATA[(7) Protection in BQ (Bonaire, Saint Eustatius and Saba) is granted automatically with the designation (see Information Notice No. 27/2011).]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="63" y="313" width="471" height="33" uuid="17f0a9e2-9107-45db-84ec-61d03c88f01d"/>
 				<textElement textAlignment="Justified">
-					<font fontName="Arial" size="7"/>
+					<font fontName="Arial" size="6"/>
 				</textElement>
 				<text><![CDATA[If the European Union is designated, it is compulsory to indicate a second language before the Office of the European Union.]]></text>
 			</staticText>
