@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formularioProtocoloMadriMM5US" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
-	<property name="ireport.zoom" value="1.1269722013523664"/>
+	<property name="ireport.zoom" value="1.8150000000000004"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="406"/>
 	<parameter name="folhaRosto" class="java.lang.Object"/>
 	<parameter name="IMAGENS_DIR" class="java.lang.String"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
 		<defaultValueExpression><![CDATA["C:\\Users\\cesar\\eclipse-oxygen-workspace\\hello-jasper\\src\\main\\java\\br\\com\\cesarsousa\\jasper\\"]]></defaultValueExpression>
 	</parameter>
+	<background>
+		<band height="50">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="50" uuid="3a9d1476-1c60-4322-b335-aad8d5711d5d"/>
+			</rectangle>
+		</band>
+	</background>
 	<title>
 		<band height="81" splitType="Stretch">
 			<staticText>
@@ -15,7 +22,7 @@
 				<textElement textAlignment="Center">
 					<font fontName="SansSerif" size="12" isBold="true"/>
 				</textElement>
-				<text><![CDATA[APPLICATION FOR INTERNATIONAL REGISTRATION GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
+				<text><![CDATA[REQUEST FOR THE RECORDING OF A CHANGE IN OWNERSHIP]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="473" y="0" width="82" height="28" uuid="47f55a23-6d96-4c7e-9a53-3238d002d222"/>
@@ -27,51 +34,37 @@
 		</band>
 	</title>
 	<detail>
-		<band height="215" splitType="Stretch">
+		<band height="252" splitType="Stretch">
 			<staticText>
-				<reportElement x="103" y="10" width="137" height="20" uuid="10d61b2d-2cd4-4743-bbfe-546f9579a064"/>
+				<reportElement x="17" y="10" width="304" height="20" uuid="10d61b2d-2cd4-4743-bbfe-546f9579a064"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="9" isUnderline="true"/>
 				</textElement>
-				<text><![CDATA[For use by the applicant]]></text>
+				<text><![CDATA[For the holder (transferor)/new owner (transferee)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="17" y="32" width="272" height="20" uuid="f7ed8f51-954b-4aaf-8483-946a8986d04b"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[This international application includes the following number of:]]></text>
+				<text><![CDATA[This request contains the following number of continuation sheets:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="53" width="100" height="20" uuid="e889710e-0421-484c-8179-e0d15a8462bc"/>
+				<reportElement x="20" y="77" width="269" height="20" uuid="db0ed037-23f3-469c-89e5-13393ba3dad5"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[- continuation sheets:]]></text>
+				<text><![CDATA[Holder/new owner’s reference:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="40" y="73" width="100" height="20" uuid="e93ef4c5-17b0-49f7-a0e1-492a1235ddc7"/>
-				<textElement>
-					<font fontName="Arial" size="9"/>
-				</textElement>
-				<text><![CDATA[- MM17 forms:]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="17" y="94" width="100" height="20" uuid="db0ed037-23f3-469c-89e5-13393ba3dad5"/>
-				<textElement>
-					<font fontName="Arial" size="9"/>
-				</textElement>
-				<text><![CDATA[Applicant’s reference:]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="380" y="13" width="137" height="20" uuid="280c9388-4189-4dde-bc0f-3ae1f07e1260"/>
+				<reportElement x="373" y="10" width="137" height="20" uuid="280c9388-4189-4dde-bc0f-3ae1f07e1260"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="9" isUnderline="true"/>
 				</textElement>
-				<text><![CDATA[For use by the Office]]></text>
+				<text><![CDATA[For the Office]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="344" y="53" width="100" height="20" uuid="b4203fb2-8b17-4906-8531-2038ad1a3a29"/>
+				<reportElement x="346" y="33" width="100" height="20" uuid="b4203fb2-8b17-4906-8531-2038ad1a3a29"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
@@ -82,14 +75,8 @@
 				<textElement>
 					<font fontName="SansSerif" size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[CONTRACTING PARTY WHOSE OFFICE IS THE OFFICE OF ORIGIN]]></text>
+				<text><![CDATA[INTERNATIONAL REGISTRATION NUMBER(S)]]></text>
 			</staticText>
-			<line>
-				<reportElement x="59" y="197" width="437" height="1" uuid="9212c5c7-c680-4d07-87ca-32662f37193e"/>
-				<graphicElement>
-					<pen lineStyle="Dotted"/>
-				</graphicElement>
-			</line>
 			<staticText>
 				<reportElement x="21" y="149" width="33" height="34" forecolor="#000000" uuid="277fee7d-b5a9-438c-abb8-8134557b77ae"/>
 				<textElement textAlignment="Center">
@@ -106,6 +93,18 @@
 			<line>
 				<reportElement x="5" y="128" width="545" height="1" uuid="9a206c54-fc32-4c39-974d-dd9016159f80"/>
 			</line>
+			<staticText>
+				<reportElement x="59" y="168" width="476" height="30" uuid="69152325-bae4-46b8-b34d-1326ac1a4801"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(several international registrations may be indicated below, provided that all registrations concerned are the subject of a total change in ownership, as provided for in item 6(a))]]></text>
+			</staticText>
+			<subreport>
+				<reportElement x="59" y="198" width="476" height="43" uuid="557fbe59-554d-4f5a-a380-6c76e5ac1b17"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{folhaRosto}.getProtocoloMadriMM5().getRegistrosInternacionais())]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "formularioProtocoloMadriMM5US_subreportRegistrosInternacionais.jasper"]]></subreportExpression>
+			</subreport>
 		</band>
 		<band height="251">
 			<staticText>

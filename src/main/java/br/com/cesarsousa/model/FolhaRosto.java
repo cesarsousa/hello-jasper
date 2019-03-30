@@ -6,6 +6,8 @@ public class FolhaRosto {
 	private TipoFolhaRosto tipoFolhaRosto;
 	
 	private ProtocoloMadri protocoloMadri;
+	
+	private ProtocoloMadriMM5 protocoloMadriMM5;
 
 	public FolhaRosto() {
 		super();
@@ -27,6 +29,12 @@ public class FolhaRosto {
 		this.protocoloMadri = protocoloMadri;
 	}
 	
+	public ProtocoloMadriMM5 getProtocoloMadriMM5() {
+		return protocoloMadriMM5;
+	}
 	
+	public void setProtocoloMadriMM5(ProtocoloMadriMM5 protocoloMadriMM5) {
+		this.protocoloMadriMM5 = protocoloMadriMM5;
+	}
 
 }

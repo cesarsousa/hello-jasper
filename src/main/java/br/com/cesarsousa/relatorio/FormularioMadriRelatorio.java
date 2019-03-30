@@ -13,6 +13,7 @@ import br.com.cesarsousa.model.IndicacoesDiversas;
 import br.com.cesarsousa.model.OutraDesignacao;
 import br.com.cesarsousa.model.Pais;
 import br.com.cesarsousa.model.ProtocoloMadri;
+import br.com.cesarsousa.model.ProtocoloMadriMM5;
 import br.com.cesarsousa.model.Representante;
 import br.com.cesarsousa.model.TipoAplicacaoRegistroEnum;
 import br.com.cesarsousa.model.TipoFolhaRosto;
@@ -38,12 +39,27 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 		FolhaRosto folhaRosto = new FolhaRosto();
 		//folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM2US);
 		folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM5US);
-		folhaRosto.setProtocoloMadri(obterProtocoloMadri());
+		folhaRosto.setProtocoloMadri(obterProtocoloMadriMM2());
+		folhaRosto.setProtocoloMadriMM5(obterProtocoloMadriMM5());
 		//folhaRosto.setProtocoloMadri(new ProtocoloMadri());
 		return folhaRosto;
 	}
 
-	private ProtocoloMadri obterProtocoloMadri() {
+	private ProtocoloMadriMM5 obterProtocoloMadriMM5() {
+		
+		ProtocoloMadriMM5 protocoloMadriMM5 = new ProtocoloMadriMM5();
+		
+		List<String> registrosInternacionais = new ArrayList<String>();
+		registrosInternacionais.add("Numero 8573875");
+		registrosInternacionais.add("Numero 7656788");
+		registrosInternacionais.add("Numero 5935409");
+		protocoloMadriMM5.setRegistrosInternacionais(registrosInternacionais);
+		
+		
+		return protocoloMadriMM5;
+	}
+
+	private ProtocoloMadri obterProtocoloMadriMM2() {
 		
 		ProtocoloMadri protocoloMadri = new ProtocoloMadri();
 
