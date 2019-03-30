@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formularioProtocoloMadriMM2_subreportAplicacoesRegistros" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e88724ca-fc0b-488a-985f-e2f5feb462ce">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="listaAplicacoes" class="java.util.List"/>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="153" y="0" width="100" height="20" uuid="50856368-99ef-40d7-9704-3ed439c26b4f"/>
+				<text><![CDATA[numero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="0" width="100" height="20" uuid="04b7939a-f7c1-4b62-9406-86df72d093ed"/>
+				<text><![CDATA[data]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="153" y="0" width="100" height="20" uuid="46bde297-b8ce-4aa0-b4f1-59d264716a16"/>
+				<textFieldExpression><![CDATA[$P{listaAplicacoes}.getNumero()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="318" y="0" width="100" height="20" uuid="0f26383a-8a92-4ab9-bc37-704389d751dc"/>
+				<textFieldExpression><![CDATA[$P{listaAplicacoes}.getData()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

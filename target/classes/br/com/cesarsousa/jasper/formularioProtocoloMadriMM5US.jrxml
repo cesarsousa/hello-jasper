@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formularioProtocoloMadriMM5US" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
+	<property name="ireport.zoom" value="1.1269722013523664"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="folhaRosto" class="java.lang.Object"/>
+	<parameter name="IMAGENS_DIR" class="java.lang.String"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\cesar\\eclipse-oxygen-workspace\\hello-jasper\\src\\main\\java\\br\\com\\cesarsousa\\jasper\\"]]></defaultValueExpression>
+	</parameter>
+	<title>
+		<band height="81" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="36" width="515" height="36" uuid="825a867f-659c-4999-96e7-90fe53d605c2"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APPLICATION FOR INTERNATIONAL REGISTRATION GOVERNED EXCLUSIVELY BY THE MADRID PROTOCOL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="0" width="82" height="28" uuid="47f55a23-6d96-4c7e-9a53-3238d002d222"/>
+				<textElement>
+					<font fontName="SansSerif" size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MM2(E)]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="215" splitType="Stretch">
+			<staticText>
+				<reportElement x="103" y="10" width="137" height="20" uuid="10d61b2d-2cd4-4743-bbfe-546f9579a064"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="9" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[For use by the applicant]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="32" width="272" height="20" uuid="f7ed8f51-954b-4aaf-8483-946a8986d04b"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[This international application includes the following number of:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="53" width="100" height="20" uuid="e889710e-0421-484c-8179-e0d15a8462bc"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[- continuation sheets:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="73" width="100" height="20" uuid="e93ef4c5-17b0-49f7-a0e1-492a1235ddc7"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[- MM17 forms:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="94" width="100" height="20" uuid="db0ed037-23f3-469c-89e5-13393ba3dad5"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Applicant’s reference:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="13" width="137" height="20" uuid="280c9388-4189-4dde-bc0f-3ae1f07e1260"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="9" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[For use by the Office]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="344" y="53" width="100" height="20" uuid="b4203fb2-8b17-4906-8531-2038ad1a3a29"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Office’s reference:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="148" width="414" height="20" uuid="615d28b0-3561-450a-ade0-5a41d952e909"/>
+				<textElement>
+					<font fontName="SansSerif" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONTRACTING PARTY WHOSE OFFICE IS THE OFFICE OF ORIGIN]]></text>
+			</staticText>
+			<line>
+				<reportElement x="59" y="197" width="437" height="1" uuid="9212c5c7-c680-4d07-87ca-32662f37193e"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="21" y="149" width="33" height="34" forecolor="#000000" uuid="277fee7d-b5a9-438c-abb8-8134557b77ae"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[1]]></text>
+			</staticText>
+			<line>
+				<reportElement x="332" y="10" width="1" height="114" uuid="a7741788-e8b9-44aa-ad98-13176e53867a"/>
+			</line>
+			<line>
+				<reportElement x="5" y="5" width="545" height="1" uuid="d947fd85-73a3-4b82-8599-562c97dc3980"/>
+			</line>
+			<line>
+				<reportElement x="5" y="128" width="545" height="1" uuid="9a206c54-fc32-4c39-974d-dd9016159f80"/>
+			</line>
+		</band>
+		<band height="251">
+			<staticText>
+				<reportElement x="59" y="19" width="414" height="20" uuid="5f56fef1-a8f2-4440-82b8-5ad243770f99"/>
+				<textElement>
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APPLICANT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="39" width="100" height="20" uuid="d21ca8df-e660-4b00-9f88-e3c59b971840"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(a) Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="59" width="100" height="20" uuid="1a28d0b4-a291-41ee-8484-b0426d367351"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(b) Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="79" width="153" height="20" uuid="7739b37e-fb08-455d-94d1-40466704afc9"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(c) Address for correspondence:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="99" width="100" height="20" uuid="afc9a312-3426-4e54-b3d0-03b99063223a"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(d) Telephone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="99" width="100" height="20" uuid="b642a14a-d265-4525-8e47-77a222768bc2"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Fax:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="119" width="100" height="20" uuid="07a71fbb-14b7-472d-8387-b382322d4586"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[E-mail Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="139" width="476" height="84" uuid="3d4ac0c9-9391-4678-bba3-1e3e59e884fe"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[By providing an e-mail address, any further correspondence from the International Bureau related to this international application and its resulting international registration will be sent only electronically and, therefore, you will no longer receive any paper correspondence.  Likewise, any further correspondence from the International Bureau related to other international applications or international registrations for which the same e-mail address has been, or will be, provided will also be sent only electronically.  Please note that, for the purpose of electronic communication, there can be only one e-mail address recorded per each international registration.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="19" width="33" height="34" forecolor="#000000" uuid="7464bfd1-6c9d-4640-b304-c7edfe58837b"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[2]]></text>
+			</staticText>
+			<line>
+				<reportElement x="5" y="12" width="545" height="1" uuid="4134d282-8a63-486f-ae72-bb518d43eaa6"/>
+			</line>
+			<image>
+				<reportElement x="59" y="223" width="15" height="15" uuid="82f8b72d-a19b-4e03-b627-523e5fb01957">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().isPreferenciaIdiomaIngles()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="34" width="40" height="20" uuid="60bfe492-7f65-4914-97c4-d547291c3576"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<text><![CDATA[MM2(E) – ]]></text>
+			</staticText>
+			<textField pattern="MMMMM-yy">
+				<reportElement x="40" y="34" width="77" height="20" uuid="31e9823d-43e7-4857-9fda-2df7e8125fb5"/>
+				<textElement>
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="33" width="145" height="20" uuid="8921c142-d895-4afd-9395-dbc85250a663"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
