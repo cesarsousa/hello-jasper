@@ -6,6 +6,7 @@ import java.util.List;
 
 import br.com.cesarsousa.model.AplicacaoRegistro;
 import br.com.cesarsousa.model.BemEServico;
+import br.com.cesarsousa.model.Cessionaria;
 import br.com.cesarsousa.model.ContratanteEServico;
 import br.com.cesarsousa.model.DireitoAoArquivo;
 import br.com.cesarsousa.model.FolhaRosto;
@@ -49,12 +50,24 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 		
 		ProtocoloMadriMM5 protocoloMadriMM5 = new ProtocoloMadriMM5();
 		
+		protocoloMadriMM5.setReferenciaTitular("Referência do titular / novo proprietário");
+		protocoloMadriMM5.setReferenciaEscritorio("Referência do escritório");
+		
 		List<String> registrosInternacionais = new ArrayList<String>();
 		registrosInternacionais.add("Numero 8573875");
 		registrosInternacionais.add("Numero 7656788");
 		registrosInternacionais.add("Numero 5935409");
 		protocoloMadriMM5.setRegistrosInternacionais(registrosInternacionais);
 		
+		protocoloMadriMM5.setCedente("Cedente da marca");
+		
+		Cessionaria cessionaria = new Cessionaria();
+		cessionaria.setNome("César de Sousa Junior");
+		cessionaria.setEndereco("Rua manoel pacheco de carvalho 400");
+		cessionaria.setEnderecoCorrespondecia("Rua da conceição 13");
+		cessionaria.setTelefone("+55 21 9 99838 6616");
+		cessionaria.setEmail("emailCessionaria@gmai.com");
+		protocoloMadriMM5.setCessionaria(cessionaria);
 		
 		return protocoloMadriMM5;
 	}
