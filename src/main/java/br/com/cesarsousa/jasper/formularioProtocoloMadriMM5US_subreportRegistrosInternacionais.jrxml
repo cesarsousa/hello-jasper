@@ -7,11 +7,11 @@
 	<detail>
 		<band height="24" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="191" height="20" uuid="3cbec6bc-b3bf-4669-b0ad-266a0ee7e5cc"/>
-				<text><![CDATA[International registration number: ]]></text>
+				<reportElement x="0" y="0" width="239" height="20" uuid="3cbec6bc-b3bf-4669-b0ad-266a0ee7e5cc"/>
+				<text><![CDATA[NÚMERO DEL REGISTRO INTERNACIONALE]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="191" y="0" width="364" height="20" uuid="66307392-65a2-4337-afd6-8e3ed4c6e422"/>
+				<reportElement x="239" y="0" width="316" height="20" uuid="66307392-65a2-4337-afd6-8e3ed4c6e422"/>
 				<textFieldExpression><![CDATA[$F{_THIS}]]></textFieldExpression>
 			</textField>
 		</band>

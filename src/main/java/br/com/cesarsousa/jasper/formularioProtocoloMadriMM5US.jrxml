@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formularioProtocoloMadriMM5US" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
-	<property name="ireport.zoom" value="1.8150000000000004"/>
+	<property name="ireport.zoom" value="1.8150000000000008"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="876"/>
+	<property name="ireport.y" value="3932"/>
 	<parameter name="folhaRosto" class="java.lang.Object"/>
 	<parameter name="IMAGENS_DIR" class="java.lang.String"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
@@ -13,16 +13,16 @@
 			<staticText>
 				<reportElement x="11" y="36" width="515" height="36" uuid="825a867f-659c-4999-96e7-90fe53d605c2"/>
 				<textElement textAlignment="Center">
-					<font fontName="SansSerif" size="12" isBold="true"/>
+					<font fontName="Liberation Sans" size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[REQUEST FOR THE RECORDING OF A CHANGE IN OWNERSHIP]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="473" y="0" width="82" height="28" uuid="47f55a23-6d96-4c7e-9a53-3238d002d222"/>
 				<textElement>
-					<font fontName="SansSerif" size="20" isBold="true"/>
+					<font fontName="Liberation Sans" size="20" isBold="true"/>
 				</textElement>
-				<text><![CDATA[MM2(E)]]></text>
+				<text><![CDATA[MM5(E)]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -59,14 +59,14 @@
 			<staticText>
 				<reportElement x="59" y="148" width="414" height="20" uuid="615d28b0-3561-450a-ade0-5a41d952e909"/>
 				<textElement>
-					<font fontName="SansSerif" size="10" isBold="true"/>
+					<font fontName="Liberation Sans" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[INTERNATIONAL REGISTRATION NUMBER(S)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="21" y="149" width="33" height="34" forecolor="#000000" uuid="277fee7d-b5a9-438c-abb8-8134557b77ae"/>
 				<textElement textAlignment="Center">
-					<font size="24" isBold="true"/>
+					<font fontName="Liberation Sans" size="24" isBold="true"/>
 				</textElement>
 				<text><![CDATA[1]]></text>
 			</staticText>
@@ -110,14 +110,14 @@
 			<staticText>
 				<reportElement x="21" y="27" width="33" height="34" forecolor="#000000" uuid="d2391d97-8968-4666-bc56-1015cfa0621b"/>
 				<textElement textAlignment="Center">
-					<font size="24" isBold="true"/>
+					<font fontName="Liberation Sans" size="24" isBold="true"/>
 				</textElement>
 				<text><![CDATA[2]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="27" width="414" height="20" uuid="91f00f10-6698-47d7-9970-ec9505983695"/>
 				<textElement>
-					<font fontName="SansSerif" size="10" isBold="true"/>
+					<font fontName="Liberation Sans" size="10" isBold="true"/>
 				</textElement>
 				<text><![CDATA[NAME OF THE HOLDER (TRANSFEROR)]]></text>
 			</staticText>
@@ -143,7 +143,7 @@
 			<staticText>
 				<reportElement x="59" y="19" width="414" height="20" uuid="5f56fef1-a8f2-4440-82b8-5ad243770f99"/>
 				<textElement>
-					<font fontName="SansSerif" isBold="true"/>
+					<font fontName="Liberation Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[NEW OWNER (TRANSFEREE)]]></text>
 			</staticText>
@@ -199,7 +199,7 @@
 			<staticText>
 				<reportElement x="20" y="19" width="33" height="34" forecolor="#000000" uuid="7464bfd1-6c9d-4640-b304-c7edfe58837b"/>
 				<textElement textAlignment="Center">
-					<font size="24" isBold="true"/>
+					<font fontName="Liberation Sans" size="24" isBold="true"/>
 				</textElement>
 				<text><![CDATA[3]]></text>
 			</staticText>
@@ -249,11 +249,11 @@
 				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadriMM5().getCessionaria().getEmail()]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="124">
+		<band height="462">
 			<staticText>
 				<reportElement x="21" y="28" width="33" height="34" forecolor="#000000" uuid="1db1456b-f375-492b-bba3-dbe0350eec05"/>
 				<textElement textAlignment="Center">
-					<font size="24" isBold="true"/>
+					<font fontName="Liberation Sans" size="24" isBold="true"/>
 				</textElement>
 				<text><![CDATA[4]]></text>
 			</staticText>
@@ -263,25 +263,514 @@
 			<staticText>
 				<reportElement x="59" y="28" width="491" height="34" uuid="53da8b86-34af-4769-8394-b5295dcd3aa0"/>
 				<textElement>
-					<font fontName="SansSerif" isBold="true"/>
+					<font fontName="Liberation Sans" isBold="true"/>
 				</textElement>
 				<text><![CDATA[ENTITLEMENT OF THE NEW OWNER (TRANSFEREE) TO BE THE HOLDER OF THE INTERNATIONAL REGISTRATION]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="59" y="62" width="100" height="20" uuid="04c1fb5d-e2dd-456a-93a3-5cfc5062dcf8"/>
+				<reportElement x="59" y="62" width="491" height="20" uuid="04c1fb5d-e2dd-456a-93a3-5cfc5062dcf8"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(a) Indicate in the appropriate space(s):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="82" width="476" height="20" uuid="84522ef7-2bc7-4b23-894d-f856fcb9652f"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(i) the name of the Contracting State of which the new owner (transferee) is a national; and/or,]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="74" y="103" width="476" height="20" uuid="e698326a-81f3-4ac4-8a5a-de7c43f4af84"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadriMM5().getDireitoAoRegistro().getNomeContratante()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="74" y="124" width="476" height="26" uuid="5931d7bf-3d0b-421d-b315-6094a3f9f646"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(ii) the name of the State member of a Contracting Organization of which the new owner (transferee) is a national; and/or,]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="74" y="151" width="476" height="20" uuid="31a1ae77-ce7b-4257-9e5a-810edd6d89ef"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadriMM5().getDireitoAoRegistro().getNomeEstado()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="74" y="172" width="476" height="26" uuid="b7aaac8a-0a39-42b4-9f15-415fcafd0c9d"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(iii) the name of the Contracting Party in the territory of which the new owner (transferee) is domiciled; and/or,]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="74" y="199" width="476" height="20" uuid="61f7384e-e27d-40ce-945d-feea1a1faa80"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadriMM5().getDireitoAoRegistro().getNomeCessionarioDomiciliado()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="74" y="220" width="476" height="31" uuid="5e5660c7-84f9-493b-89f0-cb365bd8a916"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(iv) the name of the Contracting Party in the territory of which the new owner (transferee) has a real and effective industrial or commercial establishment:
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="74" y="252" width="476" height="20" uuid="086a3f69-3c99-4e42-8bb5-bad49c91d542"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadriMM5().getDireitoAoRegistro().getNomeEstabelecimentoComercial()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="59" y="273" width="491" height="48" uuid="dcc6ebbc-6e9a-43c5-a241-005886971235"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(b) Where the new owner (transferee) is not a national of a Contracting State or of a State member of a Contracting Organization and the address given in item 3(b) is not in the territory of any of the Contracting Parties mentioned in paragraph (a)(iii) or (iv) of the present item, indicate in the space provided below:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="322" width="476" height="33" uuid="642d473e-794e-420c-9838-6d7ff12c284f"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(i) the address of the new owner (transferee) in the territory of the Contracting Party mentioned in paragraph (a)(iii) of the present item; or,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="356" width="476" height="33" uuid="ab24c006-8bec-4fad-9b20-b4c37ac64c3a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(ii) the address of the new owner’s (transferee) industrial or commercial establishment in the territory of the Contracting Party mentioned in paragraph (a)(iv) of the present item.]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="74" y="389" width="476" height="27" uuid="fc3864d5-f08d-4a5b-aa56-c12a1cadbcb4"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadriMM5().getDireitoAoRegistro().getEnderecoEstabelecimentoComercial()]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="232">
+			<staticText>
+				<reportElement x="59" y="19" width="414" height="20" uuid="5f56fef1-a8f2-4440-82b8-5ad243770f99"/>
+				<textElement>
+					<font fontName="Liberation Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[APPOINTMENT OF A REPRESENTATIVE BY THE NEW OWNER (TRANSFEREE)*]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="40" width="100" height="20" uuid="d21ca8df-e660-4b00-9f88-e3c59b971840"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
 				<text><![CDATA[(a) Name:]]></text>
 			</staticText>
+			<staticText>
+				<reportElement x="59" y="60" width="100" height="20" uuid="1a28d0b4-a291-41ee-8484-b0426d367351"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(b) Address:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="81" width="100" height="20" uuid="afc9a312-3426-4e54-b3d0-03b99063223a"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(d) Telephone:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="297" y="81" width="100" height="20" uuid="b642a14a-d265-4525-8e47-77a222768bc2"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[Fax:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="102" width="100" height="20" uuid="07a71fbb-14b7-472d-8387-b382322d4586"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[E-mail Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="59" y="124" width="476" height="95" uuid="3d4ac0c9-9391-4678-bba3-1e3e59e884fe"/>
+				<textElement textAlignment="Justified">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[By providing an e-mail address, any further correspondence from the International Bureau related to this/these international registration(s) will be sent only electronically and, therefore, you will no longer receive any paper correspondence. Likewise, any further correspondence from the International Bureau related to other international applications or international registrations for which the same e-mail address has been, or will be, provided will also be sent only electronically. Please note that, for the purpose of electronic communication, there can be only one e-mail address recorded per each international registration.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="19" width="33" height="34" forecolor="#000000" uuid="7464bfd1-6c9d-4640-b304-c7edfe58837b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Liberation Sans" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5]]></text>
+			</staticText>
+			<line>
+				<reportElement x="5" y="12" width="545" height="1" uuid="4134d282-8a63-486f-ae72-bb518d43eaa6"/>
+			</line>
+			<textField>
+				<reportElement x="159" y="40" width="376" height="20" uuid="cd3ebfbe-aafb-4dd2-8b4d-20eb26c4001d"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadriMM5().getReferenciaTitular()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="159" y="60" width="376" height="20" uuid="ea6427d5-5682-4fa2-b769-5c0668d06a1c"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadriMM5().getReferenciaTitular()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="159" y="81" width="138" height="20" uuid="53c3716f-7ef1-4d26-936a-40635ae4bf06"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadriMM5().getReferenciaTitular()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="397" y="81" width="138" height="20" uuid="4051844a-a286-4144-b1b6-13cb53001856"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadriMM5().getReferenciaTitular()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="159" y="102" width="376" height="20" uuid="18cac346-0217-48d8-942e-8275e1710538"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{folhaRosto}.getProtocoloMadriMM5().getReferenciaTitular()]]></textFieldExpression>
+			</textField>
 		</band>
-		<band height="50">
+		<band height="405">
 			<image>
-				<reportElement x="59" y="18" width="15" height="15" uuid="82f8b72d-a19b-4e03-b627-523e5fb01957">
+				<reportElement x="59" y="76" width="15" height="15" uuid="82f8b72d-a19b-4e03-b627-523e5fb01957">
 					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().isPreferenciaIdiomaIngles()]]></printWhenExpression>
 				</reportElement>
 				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
 			</image>
+			<staticText>
+				<reportElement x="20" y="31" width="33" height="34" forecolor="#000000" uuid="9eaf2fe4-2070-46ac-9107-1adf021e6421"/>
+				<textElement textAlignment="Center">
+					<font fontName="Liberation Sans" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6]]></text>
+			</staticText>
+			<line>
+				<reportElement x="5" y="15" width="545" height="1" uuid="7ec8c06e-19fc-4db8-8e00-dc82c3fc00d7"/>
+			</line>
+			<staticText>
+				<reportElement x="59" y="31" width="414" height="20" uuid="f06a0942-a7f0-466f-ae00-100e7bfbd95d"/>
+				<textElement>
+					<font fontName="Liberation Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SCOPE OF THE CHANGE IN OWNERSHIP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="52" width="100" height="20" uuid="13d4d07e-4fb0-47fd-a0d6-783c35427900"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[(check either (a) or (b))]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="75" y="76" width="460" height="74" uuid="bf3a5830-bcdd-429f-a2d5-b4b98d3fb746"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(a) TOTAL CHANGE IN OWNERSHIP (the change in ownership is to be recorded for all the Contracting Parties designated in the international registration(s) indicated in item 1, and for all the goods and services covered by such international registration(s));TOTAL CHANGE IN OWNERSHIP (the change in ownership is to be recorded for all the Contracting Parties designated in the international registration(s) indicated in item 1, and for all the goods and services covered by such international registration(s));]]></text>
+			</staticText>
+			<image>
+				<reportElement x="59" y="162" width="15" height="15" uuid="0027f611-d409-47ec-a0a3-bcf02cb3a0d5">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().isPreferenciaIdiomaIngles()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="75" y="162" width="460" height="15" uuid="b43e3ec7-4b61-43cf-8139-fa7066c1b814"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<text><![CDATA[(b) PARTIAL CHANGE IN OWNERSHIP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="88" y="178" width="447" height="48" uuid="f07a3aca-9291-4370-b3ad-a6331db336dd"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(i) the change in ownership is to be recorded for the designated Contracting Parties indicated below (if no Contracting Party is indicated, it will be understood that the change in ownership is to be recorded in respect of all the designated Contracting Parties); and/or,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="88" y="258" width="447" height="50" uuid="67852215-eccd-4a99-8525-0cec385a5c06"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(ii) the change in ownership is to be recorded for the goods and services indicated below (grouped in the appropriate classes); if no goods and services are indicated, it will be understood that the change in ownership is to be recorded in respect of all goods and services.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="88" y="308" width="447" height="41" uuid="65d98d7f-ea59-435c-ac00-a1fc591545c9"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Liberation Serif" size="9" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[You can find indications that are pre-accepted by the International Bureau in the Madrid Goods & Services Manager (MGS) at www.wipo.int/mgs/.]]></text>
+			</staticText>
+		</band>
+		<band height="258">
+			<line>
+				<reportElement x="5" y="16" width="545" height="1" uuid="f86c59de-1f5d-4f07-907e-eebb55f95f96"/>
+			</line>
+			<staticText>
+				<reportElement x="20" y="31" width="33" height="34" forecolor="#000000" uuid="732f40c6-8e46-4d2a-9452-726decbe663a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Liberation Sans" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[7]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="31" width="414" height="20" uuid="c3892c34-2e48-463d-ab1c-ff8fab1cfcd0"/>
+				<textElement>
+					<font fontName="Liberation Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MISCELLANEOUS INDICATIONS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="53" width="476" height="23" uuid="5bb79b6f-5eb3-4c57-a676-1002a69f1158"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(a) Indications concerning the new owner (transferee) (as may be required by certain designated Contracting Parties;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="77" width="476" height="23" uuid="68dd43d2-9dc5-4076-b226-e62864e829db"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(i) if the new owner (transferee) is a natural person, indicate the nationality:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="100" width="476" height="23" uuid="b50f1738-ae70-4c87-b492-6ae9ea497064"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(ii) if the new owner (transferee) is a legal entity (please, provide both the following indications):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="88" y="123" width="447" height="23" uuid="56a5a995-f713-4061-94d7-9b5de1fcbb17"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[– legal nature of the legal entity:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="88" y="146" width="447" height="30" uuid="c4611465-acdd-4276-8ba8-4691849b6eba"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[– State (country) and, where applicable, territorial unit within that State (canton, province, state, etc.), under the law of which the said legal entity has been organized:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="203" width="476" height="23" uuid="ceb50f24-6c82-47e4-8999-d24d9478695d"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(b) The new owner (transferee) may choose a preferred language for correspondence:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="60" y="227" width="15" height="15" uuid="730cb209-a3f9-4e64-aee6-675ce068a896">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().isPreferenciaIdiomaIngles()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="77" y="227" width="52" height="15" uuid="263b06fb-c0f9-49b1-baf7-ccdfb808a9e4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[English]]></text>
+			</staticText>
+			<image>
+				<reportElement x="271" y="227" width="15" height="15" uuid="f144cd65-fdb0-4e57-ac63-4583f42ff0e0">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().isPreferenciaIdiomaIngles()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="159" y="227" width="15" height="15" uuid="a3bb00e0-eef7-45fb-bdd6-a3646c849879">
+					<printWhenExpression><![CDATA[$P{folhaRosto}.getProtocoloMadri().getTitular().isPreferenciaIdiomaIngles()]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[new java.io.ByteArrayInputStream(org.apache.commons.codec.binary.Base64.decodeBase64("/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2NjIpLCBxdWFsaXR5ID0gNzAK/9sAQwAKBwcIBwYKCAgICwoKCw4YEA4NDQ4dFRYRGCMfJSQiHyIhJis3LyYpNCkhIjBBMTQ5Oz4+PiUuRElDPEg3PT47/9sAQwEKCwsODQ4cEBAcOygiKDs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7/8AAEQgAKAApAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8AnPjzx/qPiHVdO0Kws7xbC5kjIEPKoJGVckyDP3asf8JB8X/+hetv+/S//Had8MP+SieMP+vh/wD0fJXqlAHlX9v/ABf/AOhetv8Av0v/AMdqG78VfFawtJby80Wxt7eFC8kkiIqqB/21/TvXq9zcwWdtLdXMqxQwoXkkc4CqBkk147NdX/xi8V/YIZJbTw5YMJJMcM47E/7bc4B+6Mnk8EAi0Hxt4m8d67aeHrnU1062uSzSzafH5cxVVLbQxJ25x1H/ANavZfssf96X/v8AP/jXkem2dvp/7QZs7SJYYIIwkca9FUWiACvYqAPI/h+b0eNPG/8AZqwNeebJ5AuCwj3+fJjdtBOPp+lZ3h74ieJtK8bCx8V3TtFJN9muoZI0UW7EgK6kYG0HHOSCpzzwa2fhh/yUTxh/18P/AOj5Kp/G7QEhms/EcSALL/ot1gdSATGx454DKSfRRQBW+Jfie98U+IY/B2hiSSKOcRSqvAuJweh/2Exk54yCf4Qa9R8KeG7XwpoEGl2x3svzzTbcGaQ/eY/lgegAHauH+Engi60uSfXtYsnt7l18q0imUB0Q8s5HVSenOCAD616hQB5JD/ycfP8AT/20SvW68jh/5OPn+n/toleuUAeG6Xq+veEPGPiK8tfDF7fre3coB8mVQAJXIIIQ5zmtub4neI7hVWb4e3Eqq6uodJiAwOQRmLqCAQaKKAJP+Fq+Kf8AoQ7v8pv/AI1R/wALV8U/9CFd/lN/8aoooAy/Csur618YotfvdDvNPS4V9wkhk2JiAIPmZR12/rivZ6KKAP/Z".getBytes()))]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="175" y="227" width="52" height="15" uuid="1fc65b67-df3c-428c-a264-746760675be6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[French]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="227" width="52" height="15" uuid="8bc78194-2e77-496c-bbdb-d2d2d3ebde81"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Spanish]]></text>
+			</staticText>
+		</band>
+		<band height="190">
+			<line>
+				<reportElement x="5" y="12" width="545" height="1" uuid="4129ceba-5787-4783-92ba-b3b6c71b76f0"/>
+			</line>
+			<staticText>
+				<reportElement x="21" y="26" width="33" height="34" forecolor="#000000" uuid="d16edf68-c58c-424b-b6f8-485734c2de20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Liberation Sans" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="26" width="414" height="20" uuid="63beef40-c91c-4656-9ee7-3edd6dee6d21"/>
+				<textElement>
+					<font fontName="Liberation Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SIGNATURE BY THE HOLDER (TRANSFEROR) AND/OR HIS REPRESENTATIVE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="46" width="226" height="23" uuid="55f25670-d4fe-424a-9cc6-4172df6f632b"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Holder (transferor)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="309" y="46" width="226" height="23" uuid="119cbd55-2119-4694-b6be-c65354925e2c"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Representative of the holder (transferor)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="69" width="226" height="23" uuid="dff7519b-6922-4ad2-af0d-968f2f652460"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(as recorded in the International Register)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="309" y="69" width="226" height="23" uuid="8fb51a1d-989f-4403-9900-f209b117021b"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(as recorded in the International Register)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="60" y="92" width="226" height="42" uuid="98fbb5c1-7346-4f55-8a76-cd4b5febb2ac"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[By signing this form, I declare that I am entitled to sign it under the applicable law:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="309" y="92" width="226" height="42" uuid="88fa36d3-27f4-448b-a3ae-ce2cad8d6666"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[By signing this form, I declare that I am entitled to sign it under the applicable law:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="60" y="135" width="57" height="18" uuid="c87924a7-f964-49b8-986e-14fd746d6353"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="309" y="135" width="57" height="18" uuid="d56d2c80-d922-4f59-ae1d-a03d598e2a6c"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="60" y="154" width="57" height="18" uuid="add2e0a1-2333-44e9-8a43-70b04b29216b"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Signature:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="309" y="154" width="57" height="18" uuid="ae3fe8c1-cff2-4687-b810-e46bf58c9bf5"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Signature:]]></text>
+			</staticText>
+		</band>
+		<band height="203">
+			<line>
+				<reportElement x="5" y="13" width="545" height="1" uuid="653a1060-ad09-461c-95ec-a4a8eeb0fded"/>
+			</line>
+			<staticText>
+				<reportElement x="21" y="30" width="33" height="34" forecolor="#000000" uuid="5aeed2a0-7089-4caf-b023-bf55a0d03cb5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Liberation Sans" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="30" width="475" height="34" uuid="dd94e151-20e1-4857-8d92-823f65c88c5a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Liberation Sans" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OFFICE OF THE CONTRACTING PARTY (OF THE RECORDED HOLDER (TRANSFEROR) OR THAT OF THE NEW OWNER (TRANSFEREE)) PRESENTING THE REQUEST]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="64" width="474" height="23" uuid="ec97d5b7-0339-4989-84f2-e63ca7b05fd6"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[(where the request is presented through an Office)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="88" width="152" height="23" uuid="6ba6f823-6883-47d1-8846-e1789553ae63"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Name of the Office:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="112" width="474" height="23" uuid="5392d469-fd29-4a64-8a93-aa23545570c4"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Name and signature of the official signing on behalf of the Office:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="136" width="474" height="23" uuid="e938ef93-ca87-431e-be2b-aa2456de6003"/>
+				<textElement>
+					<font fontName="Arial" size="9" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[By signing this form, I declare that I am entitled to sign it under the applicable law:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="160" width="474" height="23" uuid="a1040394-6a7d-43ed-a477-7ed629d3ba1d"/>
+				<textElement>
+					<font fontName="Arial" size="9" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Name and e-mail address of the contact person in the Office:]]></text>
+			</staticText>
 		</band>
 	</detail>
 	<pageFooter>

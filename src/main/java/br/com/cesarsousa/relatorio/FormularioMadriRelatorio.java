@@ -39,7 +39,7 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 	private FolhaRosto obterFolhaRosto() {
 		FolhaRosto folhaRosto = new FolhaRosto();
 		//folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM2US);
-		folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM5US);
+		folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM5ES);
 		folhaRosto.setProtocoloMadri(obterProtocoloMadriMM2());
 		folhaRosto.setProtocoloMadriMM5(obterProtocoloMadriMM5());
 		//folhaRosto.setProtocoloMadri(new ProtocoloMadri());
@@ -63,7 +63,7 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 		
 		Cessionaria cessionaria = new Cessionaria();
 		cessionaria.setNome("César de Sousa Junior");
-		cessionaria.setEndereco("Rua manoel pacheco de carvalho 400");
+		cessionaria.setEndereco("Rua manoel pacheco de carvalho 400, centro, niteroi, rio de janeiro, brasil");
 		cessionaria.setEnderecoCorrespondecia("Rua da conceição 13");
 		cessionaria.setTelefone("+55 21 9 99838 6616");
 		cessionaria.setEmail("emailCessionaria@gmai.com");

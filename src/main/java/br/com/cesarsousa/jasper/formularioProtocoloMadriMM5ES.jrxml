@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formularioProtocoloMadriMM5US" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="formularioProtocoloMadriMM5ES" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="689dcc81-e2fe-4105-91ee-ea19a4111cd5">
 	<property name="ireport.zoom" value="1.8150000000000008"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="3932"/>
+	<property name="ireport.y" value="912"/>
 	<parameter name="folhaRosto" class="java.lang.Object"/>
 	<parameter name="IMAGENS_DIR" class="java.lang.String"/>
 	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
@@ -15,14 +15,14 @@
 				<textElement textAlignment="Center">
 					<font fontName="Liberation Sans" size="12" isBold="true"/>
 				</textElement>
-				<text><![CDATA[REQUEST FOR THE RECORDING OF A CHANGE IN OWNERSHIP]]></text>
+				<text><![CDATA[PETICIÓN DE INSCRIPCIÓN DE UN CAMBIO EN LA TITULARIDAD]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="473" y="0" width="82" height="28" uuid="47f55a23-6d96-4c7e-9a53-3238d002d222"/>
 				<textElement>
 					<font fontName="Liberation Sans" size="20" isBold="true"/>
 				</textElement>
-				<text><![CDATA[MM5(E)]]></text>
+				<text><![CDATA[MM5(S)]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -33,35 +33,35 @@
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="9" isUnderline="true"/>
 				</textElement>
-				<text><![CDATA[For the holder (transferor)/new owner (transferee)]]></text>
+				<text><![CDATA[A rellenar por el titular (cedente)/el nuevo titular (cesionario)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="17" y="33" width="269" height="20" uuid="db0ed037-23f3-469c-89e5-13393ba3dad5"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[Holder/new owner’s reference:]]></text>
+				<text><![CDATA[Referencia del titular/nuevo titular:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="373" y="10" width="137" height="20" uuid="280c9388-4189-4dde-bc0f-3ae1f07e1260"/>
 				<textElement textAlignment="Center">
 					<font fontName="Arial" size="9" isUnderline="true"/>
 				</textElement>
-				<text><![CDATA[For the Office]]></text>
+				<text><![CDATA[A rellenar por la Oficina]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="346" y="33" width="100" height="20" uuid="b4203fb2-8b17-4906-8531-2038ad1a3a29"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[Office’s reference:]]></text>
+				<text><![CDATA[Referencia de la Oficina:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="148" width="414" height="20" uuid="615d28b0-3561-450a-ade0-5a41d952e909"/>
 				<textElement>
 					<font fontName="Liberation Sans" size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[INTERNATIONAL REGISTRATION NUMBER(S)]]></text>
+				<text><![CDATA[NÚMERO DEL REGISTRO O REGISTROS INTERNACIONALES]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="21" y="149" width="33" height="34" forecolor="#000000" uuid="277fee7d-b5a9-438c-abb8-8134557b77ae"/>
@@ -84,7 +84,7 @@
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(several international registrations may be indicated below, provided that all registrations concerned are the subject of a total change in ownership, as provided for in item 6(a))]]></text>
+				<text><![CDATA[(a continuación pueden indicarse varios registros internacionales, siempre que todos esos registros sean objeto de un cambio total en la titularidad, como se prevé en el punto 6.a))]]></text>
 			</staticText>
 			<subreport>
 				<reportElement x="59" y="198" width="476" height="43" uuid="557fbe59-554d-4f5a-a380-6c76e5ac1b17"/>
@@ -119,14 +119,14 @@
 				<textElement>
 					<font fontName="Liberation Sans" size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[NAME OF THE HOLDER (TRANSFEROR)]]></text>
+				<text><![CDATA[NOMBRE DEL TITULAR (CEDENTE)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="47" width="476" height="14" uuid="43404ab2-7889-4818-92a0-3c4c46bcd179"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(as recorded in the International Register)]]></text>
+				<text><![CDATA[(según consta en el Registro Internacional)]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="59" y="64" width="476" height="20" uuid="1aecfbcc-df3b-44fd-9d76-bd5db829f250"/>
@@ -139,41 +139,41 @@
 				<reportElement x="5" y="12" width="545" height="1" uuid="f9ee18e7-95c6-450e-8795-4d396525a03c"/>
 			</line>
 		</band>
-		<band height="252">
+		<band height="269">
 			<staticText>
 				<reportElement x="59" y="19" width="414" height="20" uuid="5f56fef1-a8f2-4440-82b8-5ad243770f99"/>
 				<textElement>
 					<font fontName="Liberation Sans" isBold="true"/>
 				</textElement>
-				<text><![CDATA[NEW OWNER (TRANSFEREE)]]></text>
+				<text><![CDATA[NUEVO TITULAR (CESIONARIO)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="40" width="100" height="20" uuid="d21ca8df-e660-4b00-9f88-e3c59b971840"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(a) Name:]]></text>
+				<text><![CDATA[(a) Nombre:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="60" width="100" height="20" uuid="1a28d0b4-a291-41ee-8484-b0426d367351"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(b) Address:]]></text>
+				<text><![CDATA[(b) Dirección:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="80" width="153" height="20" uuid="7739b37e-fb08-455d-94d1-40466704afc9"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(c) Address for correspondence:]]></text>
+				<text><![CDATA[(c) Dirección para la correspondencia:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="101" width="100" height="20" uuid="afc9a312-3426-4e54-b3d0-03b99063223a"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(d) Telephone:]]></text>
+				<text><![CDATA[(d) N.º de teléfono:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="297" y="101" width="100" height="20" uuid="b642a14a-d265-4525-8e47-77a222768bc2"/>
@@ -187,14 +187,14 @@
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[E-mail Address]]></text>
+				<text><![CDATA[Dirección de correo-e:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="59" y="144" width="476" height="95" uuid="3d4ac0c9-9391-4678-bba3-1e3e59e884fe"/>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="59" y="144" width="476" height="110" uuid="3d4ac0c9-9391-4678-bba3-1e3e59e884fe"/>
 				<textElement textAlignment="Justified">
 					<font size="9"/>
 				</textElement>
-				<text><![CDATA[By providing an e-mail address, any further correspondence from the International Bureau related to this/these international registration(s) will be sent only electronically and, therefore, you will no longer receive any paper correspondence. Likewise, any further correspondence from the International Bureau related to other international applications or international registrations for which the same e-mail address has been, or will be, provided will also be sent only electronically. Please note that, for the purpose of electronic communication, there can be only one e-mail address recorded per each international registration.]]></text>
+				<text><![CDATA[Al facilitar una dirección de correo electrónico, cualquier correspondencia emitida por la Oficina Internacional relacionada con este/estos registro(s) internacional(es) será enviada de forma electrónica exclusivamente y, por consiguiente, cesará el envío de toda correspondencia impresa. Asimismo, cualquier otra correspondencia emitida por la Oficina Internacional en relación con otras solicitudes o registros internacionales para los cuales se haya proporcionado, o se proporcione, la misma dirección de correo electrónico será enviada de forma electrónica exclusivamente. Por favor tenga en cuenta que, a los efectos de las comunicaciones electrónicas, sólo puede inscribirse una única dirección de correo electrónico por cada registro internacional.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="20" y="19" width="33" height="34" forecolor="#000000" uuid="7464bfd1-6c9d-4640-b304-c7edfe58837b"/>
@@ -265,21 +265,21 @@
 				<textElement>
 					<font fontName="Liberation Sans" isBold="true"/>
 				</textElement>
-				<text><![CDATA[ENTITLEMENT OF THE NEW OWNER (TRANSFEREE) TO BE THE HOLDER OF THE INTERNATIONAL REGISTRATION]]></text>
+				<text><![CDATA[DERECHO DEL NUEVO TITULAR (CESIONARIO) PARA SER TITULAR DEL REGISTRO INTERNACIONAL]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="62" width="491" height="20" uuid="04c1fb5d-e2dd-456a-93a3-5cfc5062dcf8"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(a) Indicate in the appropriate space(s):]]></text>
+				<text><![CDATA[(a) Indicar a continuación:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="74" y="82" width="476" height="20" uuid="84522ef7-2bc7-4b23-894d-f856fcb9652f"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(i) the name of the Contracting State of which the new owner (transferee) is a national; and/or,]]></text>
+				<text><![CDATA[(i) el nombre del Estado Contratante del que es nacional el nuevo titular (cesionario); y/o,]]></text>
 			</staticText>
 			<textField>
 				<reportElement positionType="Float" x="74" y="103" width="476" height="20" uuid="e698326a-81f3-4ac4-8a5a-de7c43f4af84"/>
@@ -293,7 +293,7 @@
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(ii) the name of the State member of a Contracting Organization of which the new owner (transferee) is a national; and/or,]]></text>
+				<text><![CDATA[(ii) el nombre del Estado miembro de una Organización Contratante del que es nacional el nuevo titular (cesionario); y/o,]]></text>
 			</staticText>
 			<textField>
 				<reportElement positionType="Float" x="74" y="151" width="476" height="20" uuid="31a1ae77-ce7b-4257-9e5a-810edd6d89ef"/>
@@ -307,7 +307,7 @@
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(iii) the name of the Contracting Party in the territory of which the new owner (transferee) is domiciled; and/or,]]></text>
+				<text><![CDATA[(iii) el nombre de la Parte Contratante en cuyo territorio está domiciliado el nuevo titular (cesionario); y/o,]]></text>
 			</staticText>
 			<textField>
 				<reportElement positionType="Float" x="74" y="199" width="476" height="20" uuid="61f7384e-e27d-40ce-945d-feea1a1faa80"/>
@@ -318,10 +318,10 @@
 			</textField>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="74" y="220" width="476" height="31" uuid="5e5660c7-84f9-493b-89f0-cb365bd8a916"/>
-				<textElement>
+				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(iv) the name of the Contracting Party in the territory of which the new owner (transferee) has a real and effective industrial or commercial establishment:
+				<text><![CDATA[(iv) el nombre de la Parte Contratante en cuyo territorio el nuevo titular (cesionario) tiene un establecimiento comercial o industrial real y efectivo:
 ]]></text>
 			</staticText>
 			<textField>
@@ -336,21 +336,21 @@
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(b) Where the new owner (transferee) is not a national of a Contracting State or of a State member of a Contracting Organization and the address given in item 3(b) is not in the territory of any of the Contracting Parties mentioned in paragraph (a)(iii) or (iv) of the present item, indicate in the space provided below:]]></text>
+				<text><![CDATA[(b) Cuando el nuevo titular (cesionario) no sea nacional de un Estado Contratante o de un Estado miembro de una Organización Contratante y la dirección indicada en el punto 3.b) no se encuentre en el territorio de una de las Partes Contratantes mencionadas en el apartado a)iii) ni iv) de este punto, indicar en el espacio que figura a continuación:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="74" y="322" width="476" height="33" uuid="642d473e-794e-420c-9838-6d7ff12c284f"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(i) the address of the new owner (transferee) in the territory of the Contracting Party mentioned in paragraph (a)(iii) of the present item; or,]]></text>
+				<text><![CDATA[(i) la dirección del nuevo titular (cesionario) en el territorio de la Parte Contratante mencionada en el apartado a)iii) de este punto; o,]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="74" y="356" width="476" height="33" uuid="ab24c006-8bec-4fad-9b20-b4c37ac64c3a"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(ii) the address of the new owner’s (transferee) industrial or commercial establishment in the territory of the Contracting Party mentioned in paragraph (a)(iv) of the present item.]]></text>
+				<text><![CDATA[(ii) la dirección del establecimiento comercial o industrial del nuevo titular (cesionario) en el territorio de la Parte Contratante mencionada en el apartado a)iv) de este punto.]]></text>
 			</staticText>
 			<textField>
 				<reportElement positionType="Float" x="74" y="389" width="476" height="27" uuid="fc3864d5-f08d-4a5b-aa56-c12a1cadbcb4"/>
@@ -366,28 +366,28 @@
 				<textElement>
 					<font fontName="Liberation Sans" isBold="true"/>
 				</textElement>
-				<text><![CDATA[APPOINTMENT OF A REPRESENTATIVE BY THE NEW OWNER (TRANSFEREE)*]]></text>
+				<text><![CDATA[NOMBRAMIENTO DE UN MANDATARIO POR EL NUEVO TITULAR (CESIONARIO)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="40" width="100" height="20" uuid="d21ca8df-e660-4b00-9f88-e3c59b971840"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(a) Name:]]></text>
+				<text><![CDATA[Nombre:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="60" width="100" height="20" uuid="1a28d0b4-a291-41ee-8484-b0426d367351"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(b) Address:]]></text>
+				<text><![CDATA[Dirección:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="81" width="100" height="20" uuid="afc9a312-3426-4e54-b3d0-03b99063223a"/>
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(d) Telephone:]]></text>
+				<text><![CDATA[N.º de teléfono:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="297" y="81" width="100" height="20" uuid="b642a14a-d265-4525-8e47-77a222768bc2"/>
@@ -401,14 +401,14 @@
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[E-mail Address]]></text>
+				<text><![CDATA[Dirección de correo-e :]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="59" y="124" width="476" height="95" uuid="3d4ac0c9-9391-4678-bba3-1e3e59e884fe"/>
 				<textElement textAlignment="Justified">
 					<font size="9"/>
 				</textElement>
-				<text><![CDATA[By providing an e-mail address, any further correspondence from the International Bureau related to this/these international registration(s) will be sent only electronically and, therefore, you will no longer receive any paper correspondence. Likewise, any further correspondence from the International Bureau related to other international applications or international registrations for which the same e-mail address has been, or will be, provided will also be sent only electronically. Please note that, for the purpose of electronic communication, there can be only one e-mail address recorded per each international registration.]]></text>
+				<text><![CDATA[Al facilitar una dirección de correo electrónico, cualquier correspondencia emitida por la Oficina Internacional relacionada con este/estos registro(s) internacional(es) será enviada de forma electrónica exclusivamente y, por consiguiente, cesará el envío de toda correspondencia impresa. Asimismo, cualquier otra correspondencia emitida por la Oficina Internacional en relación con otras solicitudes o registros internacionales para los cuales se haya proporcionado, o se proporcione, la misma dirección de correo electrónico será enviada de forma electrónica exclusivamente. Por favor tenga en cuenta que, a los efectos de las comunicaciones electrónicas, sólo puede inscribirse una única dirección de correo electrónico por cada registro internacional.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="20" y="19" width="33" height="34" forecolor="#000000" uuid="7464bfd1-6c9d-4640-b304-c7edfe58837b"/>
@@ -478,21 +478,21 @@
 				<textElement>
 					<font fontName="Liberation Sans" isBold="true"/>
 				</textElement>
-				<text><![CDATA[SCOPE OF THE CHANGE IN OWNERSHIP]]></text>
+				<text><![CDATA[ALCANCE DEL CAMBIO EN LA TITULARIDAD]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="52" width="100" height="20" uuid="13d4d07e-4fb0-47fd-a0d6-783c35427900"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="true"/>
 				</textElement>
-				<text><![CDATA[(check either (a) or (b))]]></text>
+				<text><![CDATA[(marque a) o b))]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="75" y="76" width="460" height="74" uuid="bf3a5830-bcdd-429f-a2d5-b4b98d3fb746"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(a) TOTAL CHANGE IN OWNERSHIP (the change in ownership is to be recorded for all the Contracting Parties designated in the international registration(s) indicated in item 1, and for all the goods and services covered by such international registration(s));TOTAL CHANGE IN OWNERSHIP (the change in ownership is to be recorded for all the Contracting Parties designated in the international registration(s) indicated in item 1, and for all the goods and services covered by such international registration(s));]]></text>
+				<text><![CDATA[(a) CAMBIO TOTAL EN LA TITULARIDAD (el cambio en la titularidad ha de inscribirse respecto de todas las Partes Contratantes designadas en el registro o los registros internacionales indicados en el punto 1, y para todos los productos y servicios a los que se refieren dichos registros internacionales)]]></text>
 			</staticText>
 			<image>
 				<reportElement x="59" y="162" width="15" height="15" uuid="0027f611-d409-47ec-a0a3-bcf02cb3a0d5">
@@ -505,28 +505,28 @@
 				<textElement>
 					<font fontName="Arial" size="9"/>
 				</textElement>
-				<text><![CDATA[(b) PARTIAL CHANGE IN OWNERSHIP]]></text>
+				<text><![CDATA[CAMBIO PARCIAL EN LA TITULARIDAD]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="88" y="178" width="447" height="48" uuid="f07a3aca-9291-4370-b3ad-a6331db336dd"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[(i) the change in ownership is to be recorded for the designated Contracting Parties indicated below (if no Contracting Party is indicated, it will be understood that the change in ownership is to be recorded in respect of all the designated Contracting Parties); and/or,]]></text>
+				<text><![CDATA[(i) el cambio en la titularidad ha de inscribirse respecto de las Partes Contratantes designadas indicadas a continuación (si no se indica Parte Contratante alguna, se entenderá que el cambio en la titularidad ha de inscribirse respecto de todas las Partes Contratantes designadas); y/o,]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="88" y="258" width="447" height="50" uuid="67852215-eccd-4a99-8525-0cec385a5c06"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[(ii) the change in ownership is to be recorded for the goods and services indicated below (grouped in the appropriate classes); if no goods and services are indicated, it will be understood that the change in ownership is to be recorded in respect of all goods and services.]]></text>
+				<text><![CDATA[(ii) el cambio en la titularidad ha de inscribirse respecto de los productos y servicios indicados a continuación (agrupados en las clases correspondientes); si no se indican productos y servicios, se entenderá que el cambio en la titularidad ha de inscribirse para todos los productos y servicios.]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="88" y="308" width="447" height="41" uuid="65d98d7f-ea59-435c-ac00-a1fc591545c9"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Liberation Serif" size="9" isBold="true" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[You can find indications that are pre-accepted by the International Bureau in the Madrid Goods & Services Manager (MGS) at www.wipo.int/mgs/.]]></text>
+				<text><![CDATA[En el Gestor de productos y servicios de Madrid (MGS) se puede hallar la lista de indicaciones válidas de la Oficina Internacional, en la siguiente dirección: www.wipo.int/mgs/.]]></text>
 			</staticText>
 		</band>
 		<band height="258">
@@ -545,49 +545,49 @@
 				<textElement>
 					<font fontName="Liberation Sans" isBold="true"/>
 				</textElement>
-				<text><![CDATA[MISCELLANEOUS INDICATIONS]]></text>
+				<text><![CDATA[INDICACIONES VARIAS]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="53" width="476" height="23" uuid="5bb79b6f-5eb3-4c57-a676-1002a69f1158"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[(a) Indications concerning the new owner (transferee) (as may be required by certain designated Contracting Parties;]]></text>
+				<text><![CDATA[(a) Indicaciones relativas al nuevo titular (cesionario) (según lo exijan ciertas Partes Contratantes designadas;]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="77" width="476" height="23" uuid="68dd43d2-9dc5-4076-b226-e62864e829db"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[(i) if the new owner (transferee) is a natural person, indicate the nationality:]]></text>
+				<text><![CDATA[(i) si el nuevo titular (cesionario) es una persona natural, sírvase indicar su nacionalidad:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="100" width="476" height="23" uuid="b50f1738-ae70-4c87-b492-6ae9ea497064"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[(ii) if the new owner (transferee) is a legal entity (please, provide both the following indications):]]></text>
+				<text><![CDATA[(ii) si el nuevo titular (cesionario) es una persona jurídica (por favor, incluya las dos indicaciones que siguen):]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="88" y="123" width="447" height="23" uuid="56a5a995-f713-4061-94d7-9b5de1fcbb17"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[– legal nature of the legal entity:]]></text>
+				<text><![CDATA[– naturaleza jurídica de dicha persona jurídica:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="88" y="146" width="447" height="30" uuid="c4611465-acdd-4276-8ba8-4691849b6eba"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[– State (country) and, where applicable, territorial unit within that State (canton, province, state, etc.), under the law of which the said legal entity has been organized:]]></text>
+				<text><![CDATA[– Estado (país) y, en su caso, unidad territorial dentro de ese Estado (cantón, provincia, estado, etc.), al amparo de cuya legislación se ha constituido dicha persona jurídica:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="59" y="203" width="476" height="23" uuid="ceb50f24-6c82-47e4-8999-d24d9478695d"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[(b) The new owner (transferee) may choose a preferred language for correspondence:]]></text>
+				<text><![CDATA[(b) El nuevo titular (cesionario) puede escoger qué idioma prefiere para la correspondencia:]]></text>
 			</staticText>
 			<image>
 				<reportElement x="60" y="227" width="15" height="15" uuid="730cb209-a3f9-4e64-aee6-675ce068a896">
@@ -600,7 +600,7 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[English]]></text>
+				<text><![CDATA[inglés]]></text>
 			</staticText>
 			<image>
 				<reportElement x="271" y="227" width="15" height="15" uuid="f144cd65-fdb0-4e57-ac63-4583f42ff0e0">
@@ -619,14 +619,14 @@
 				<textElement verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[French]]></text>
+				<text><![CDATA[francés]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="287" y="227" width="52" height="15" uuid="8bc78194-2e77-496c-bbdb-d2d2d3ebde81"/>
 				<textElement verticalAlignment="Middle">
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[Spanish]]></text>
+				<text><![CDATA[español]]></text>
 			</staticText>
 		</band>
 		<band height="190">
@@ -645,77 +645,77 @@
 				<textElement>
 					<font fontName="Liberation Sans" isBold="true"/>
 				</textElement>
-				<text><![CDATA[SIGNATURE BY THE HOLDER (TRANSFEROR) AND/OR HIS REPRESENTATIVE]]></text>
+				<text><![CDATA[FIRMA DEL TITULAR (CEDENTE) Y/O DE SU MANDATARIO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="60" y="46" width="226" height="23" uuid="55f25670-d4fe-424a-9cc6-4172df6f632b"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="true"/>
 				</textElement>
-				<text><![CDATA[Holder (transferor)]]></text>
+				<text><![CDATA[Titular (cedente)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="309" y="46" width="226" height="23" uuid="119cbd55-2119-4694-b6be-c65354925e2c"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="true"/>
 				</textElement>
-				<text><![CDATA[Representative of the holder (transferor)]]></text>
+				<text><![CDATA[Mandatario del titular (cedente)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="60" y="69" width="226" height="23" uuid="dff7519b-6922-4ad2-af0d-968f2f652460"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[(as recorded in the International Register)]]></text>
+				<text><![CDATA[(según consta en el Registro Internacional)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="309" y="69" width="226" height="23" uuid="8fb51a1d-989f-4403-9900-f209b117021b"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[(as recorded in the International Register)]]></text>
+				<text><![CDATA[(según consta en el Registro Internacional)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="60" y="92" width="226" height="42" uuid="98fbb5c1-7346-4f55-8a76-cd4b5febb2ac"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9" isItalic="true" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[By signing this form, I declare that I am entitled to sign it under the applicable law:]]></text>
+				<text><![CDATA[La firma de este formulario constituye una declaración de que estoy legitimado para firmarlo en virtud del Derecho aplicable:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="309" y="92" width="226" height="42" uuid="88fa36d3-27f4-448b-a3ae-ce2cad8d6666"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9" isItalic="true" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[By signing this form, I declare that I am entitled to sign it under the applicable law:]]></text>
+				<text><![CDATA[La firma de este formulario constituye una declaración de que estoy legitimado para firmarlo en virtud del Derecho aplicable:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="60" y="135" width="57" height="18" uuid="c87924a7-f964-49b8-986e-14fd746d6353"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[Name:]]></text>
+				<text><![CDATA[Nombre:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="309" y="135" width="57" height="18" uuid="d56d2c80-d922-4f59-ae1d-a03d598e2a6c"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[Name:]]></text>
+				<text><![CDATA[Nombre:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="60" y="154" width="57" height="18" uuid="add2e0a1-2333-44e9-8a43-70b04b29216b"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[Signature:]]></text>
+				<text><![CDATA[Firma:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="309" y="154" width="57" height="18" uuid="ae3fe8c1-cff2-4687-b810-e46bf58c9bf5"/>
 				<textElement textAlignment="Justified">
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[Signature:]]></text>
+				<text><![CDATA[Firma:]]></text>
 			</staticText>
 		</band>
 		<band height="203">
@@ -734,42 +734,42 @@
 				<textElement textAlignment="Justified">
 					<font fontName="Liberation Sans" isBold="true"/>
 				</textElement>
-				<text><![CDATA[OFFICE OF THE CONTRACTING PARTY (OF THE RECORDED HOLDER (TRANSFEROR) OR THAT OF THE NEW OWNER (TRANSFEREE)) PRESENTING THE REQUEST]]></text>
+				<text><![CDATA[OFICINA DE LA PARTE CONTRATANTE (DEL TITULAR INSCRITO (CEDENTE) O DEL NUEVO TITULAR (CESIONARIO)) QUE PRESENTA LA PETICIÓN]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="61" y="64" width="474" height="23" uuid="ec97d5b7-0339-4989-84f2-e63ca7b05fd6"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[(where the request is presented through an Office)]]></text>
+				<text><![CDATA[(cuando la petición se presenta por conducto de una Oficina)]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="60" y="88" width="152" height="23" uuid="6ba6f823-6883-47d1-8846-e1789553ae63"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[Name of the Office:]]></text>
+				<text><![CDATA[Nombre de la Oficina:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="61" y="112" width="474" height="23" uuid="5392d469-fd29-4a64-8a93-aa23545570c4"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[Name and signature of the official signing on behalf of the Office:]]></text>
+				<text><![CDATA[Nombre y firma del representante oficial en nombre de la Oficina:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="61" y="136" width="474" height="23" uuid="e938ef93-ca87-431e-be2b-aa2456de6003"/>
+				<reportElement positionType="Float" stretchType="RelativeToBandHeight" x="61" y="136" width="474" height="34" uuid="e938ef93-ca87-431e-be2b-aa2456de6003"/>
 				<textElement>
 					<font fontName="Arial" size="9" isItalic="true" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[By signing this form, I declare that I am entitled to sign it under the applicable law:]]></text>
+				<text><![CDATA[La firma de este formulario constituye una declaración de que estoy legitimado para firmarlo en virtud del Derecho aplicable:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="61" y="160" width="474" height="23" uuid="a1040394-6a7d-43ed-a477-7ed629d3ba1d"/>
+				<reportElement x="61" y="170" width="474" height="23" uuid="a1040394-6a7d-43ed-a477-7ed629d3ba1d"/>
 				<textElement>
 					<font fontName="Arial" size="9" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[Name and e-mail address of the contact person in the Office:]]></text>
+				<text><![CDATA[Nombre y dirección de correo electrónico de la persona de contacto en la Oficina:]]></text>
 			</staticText>
 		</band>
 	</detail>
