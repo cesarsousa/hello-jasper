@@ -39,7 +39,7 @@ public class FormularioMadriRelatorio extends AbstractRelatorio {
 	private FolhaRosto obterFolhaRosto() {
 		FolhaRosto folhaRosto = new FolhaRosto();
 		//folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM2US);
-		folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM5ES);
+		folhaRosto.setTipoFolhaRosto(TipoFolhaRosto.FORMULARIOPROTOCOLOMADRIMM5US);
 		folhaRosto.setProtocoloMadri(obterProtocoloMadriMM2());
 		folhaRosto.setProtocoloMadriMM5(obterProtocoloMadriMM5());
 		//folhaRosto.setProtocoloMadri(new ProtocoloMadri());
